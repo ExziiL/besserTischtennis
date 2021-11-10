@@ -4,7 +4,7 @@ export interface INavigation {}
 
 const Navigation: FC<INavigation> = () => {
 	return (
-		<nav className="flex">
+		<nav className="flex bg-blue-500">
 			<ul className="flex">
 				<li>Startseite</li>
 				<li>Über Mich</li>
