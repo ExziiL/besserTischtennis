@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
-import Button from './components/atoms/Button/Button';
+
+import NavBar from './components/sections/NavBar/NavBar';
 
 function App() {
 	return (
-		<div className="App bg-[#76993e]">
-			<Button name="ButtonName" />
+		<div className="">
+			<NavBar />
 		</div>
 	);
 }
