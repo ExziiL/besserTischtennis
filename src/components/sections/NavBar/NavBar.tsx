@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import Navigation from '../../../components/molecules/Navigation/Navigation';
+import Navigation from './Navigation/Navigation';
 
 export interface INavBar {
 	// data: any;
@@ -8,7 +8,7 @@ export interface INavBar {
 
 const NavBar: FC<INavBar> = () => {
 	return (
-		<div className="flex">
+		<div className="flex justify-between">
 			<div className="">LOGO</div>
 			<Navigation />
 		</div>
