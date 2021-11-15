@@ -1,18 +1,21 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 
 import Navigation from './Navigation/Navigation';
+import MobileNavigation from './Navigation/MobileNavigation';
+
+import { useViewport } from '../../../hooks/useViewport';
 
 export interface INavBar {
-	// data: any;
+	navPoints: string[];
 }
 
 const NavBar: FC<INavBar> = () => {
-	return (
-		<div className="flex justify-between">
-			<div className="">LOGO</div>
-			<Navigation />
-		</div>
-	);
+	const navPoints = ['Startseite', 'Über mich', 'Lehrgänge', 'Blog', 'Kontakt'];
+
+	const { width } = useViewport();
+	const breakpoint = 640;
+
+	return <nav className="">{width < breakpoint ? <MobileNavigation navPoints={navPoints} /> : <Navigation />}</nav>;
 };
 
 export default NavBar;

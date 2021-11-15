@@ -4,8 +4,8 @@ import NavBar from './components/sections/NavBar/NavBar';
 
 function App() {
 	return (
-		<div className="">
-			<NavBar />
+		<div className="max-w-[1280px] mx-auto">
+			<NavBar navPoints={[]} />
 		</div>
 	);
 }
