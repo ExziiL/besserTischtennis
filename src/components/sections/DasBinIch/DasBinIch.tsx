@@ -1,0 +1,22 @@
+import React, { FC } from 'react';
+
+import Timeline from './Timeline/Timeline';
+
+export interface IDasBinIch {}
+
+const DasBinIch: FC<IDasBinIch> = () => {
+	return (
+		<div className="flex flex-col m-4">
+			<div>
+				<div className="text-4xl font-semibold leading-9">
+					<h1>Das bin ich:</h1>
+					<h1>Giole Vulcano</h1>
+				</div>
+				<p>Ich bin 20 Jahre jung und komme aus Besigheim, das liegt ca. 25 km entfernt von Stuttgart.</p>
+			</div>
+			<Timeline />
+		</div>
+	);
+};
+
+export default DasBinIch;

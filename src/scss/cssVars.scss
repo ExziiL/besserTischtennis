@@ -1,0 +1,159 @@
+// .theme-qeedo {
+// 	--color-base-text: #151515;
+
+// 	--color-link-text: #387dbb;
+
+// 	--color-primary: #151515;
+
+// 	--image-gallery: #151515;
+
+// 	--color-secondary: #82aeab;
+// 	--color-secondary-dark: #82aeab;
+
+// 	--color-price-reduced: #d91b3e;
+
+// 	--color-background-light: #f2f2f2;
+// 	--color-active-link-menu: #82aeab;
+
+// 	--color-background-social-media-icons: #262626;
+
+// 	/*
+//   * MENU
+//   */
+
+// 	--logo-width-desktop: 110px;
+// 	--logo-width-mobile: 60px;
+
+// 	/*
+//   * FOOTER
+//   */
+
+// 	--color-background-footer: #151515;
+// 	--color-text-footer: #fff;
+// 	--color-link-footer: #fff;
+
+// 	/*
+//   * NEWSLETTER FORM TASTIC
+//   */
+
+// 	--color-text-newsletter: var(--color-base-text);
+// 	--color-stroke-icon-newsletter: #fff;
+// 	--color-fill-icon-newsletter: var(--color-secondary-invert-background);
+// 	--color-background-newsletter: #f9f8f4;
+
+// 	/*
+//   * BUTTONS
+//   */
+
+// 	/* We have 3 Buttons: cta, primary, secondary.
+//   Each can hold an icon, has variants with small text
+//   and a variant for being displayed on dark backgrounds.
+//   States: normal, hover, focus, active, disabled */
+
+// 	// CTA
+
+// 	--btn-cta-color: #fff;
+// 	--btn-cta-background-color: #3e7e44;
+// 	--btn-cta-border: 2px solid #3e7e44;
+
+// 	--btn-cta-hover-color: #fff;
+// 	--btn-cta-hover-background-color: #10a01e;
+// 	--btn-cta-hover-border: #10a01e;
+
+// 	--btn-cta-focus-color: #fff;
+// 	--btn-cta-focus-background-color: #434f5a;
+// 	--btn-cta-focus-border: #fff;
+
+// 	--btn-cta-active-color: #fff;
+// 	--btn-cta-active-background-color: #3e7e44;
+// 	--btn-cta-active-border: #3e7e44;
+
+// 	// Primary
+
+// 	--btn-primary-color: #fff;
+// 	--btn-primary-background-color: #387dbb;
+// 	--btn-primary-border: 2px solid #387dbb;
+
+// 	--btn-primary-hover-color: #fff;
+// 	--btn-primary-hover-background-color: #1e87e6;
+// 	--btn-primary-hover-border: #1e87e6;
+
+// 	--btn-primary-focus-color: #fff;
+// 	--btn-primary-focus-background-color: #434f5a;
+// 	--btn-primary-focus-border: #fff;
+
+// 	--btn-primary-active-color: #fff;
+// 	--btn-primary-active-background-color: #387dbb;
+// 	--btn-primary-active-border: #387dbb;
+
+// 	// Primary - contrastInvert
+
+// 	--btn-primary-invert-color: #1a1a1a;
+// 	--btn-primary-invert-background-color: #fff;
+// 	--btn-primary-invert-border: 2px solid #fff;
+
+// 	--btn-primary-invert-hover-color: #1a1a1a;
+// 	--btn-primary-invert-hover-background-color: #e5e4e0;
+// 	--btn-primary-invert-hover-border: #e5e4e0;
+
+// 	--btn-primary-invert-focus-color: #fff;
+// 	--btn-primary-invert-focus-background-color: #434f5a;
+// 	--btn-primary-invert-focus-border: #fff;
+
+// 	--btn-primary-invert-active-color: #1a1a1a;
+// 	--btn-primary-invert-active-background-color: #fff;
+// 	--btn-primary-invert-active-border: #fff;
+
+// 	// Secondary
+
+// 	--btn-secondary-color: #1a1a1a;
+// 	--btn-secondary-background-color: #fff;
+// 	--btn-secondary-border: 2px solid #1a1a1a;
+
+// 	--btn-secondary-hover-color: #fff;
+// 	--btn-secondary-hover-background-color: #1a1a1a;
+// 	--btn-secondary-hover-border: #1a1a1a;
+
+// 	--btn-secondary-focus-color: #fff;
+// 	--btn-secondary-focus-background-color: #434f5a;
+// 	--btn-secondary-focus-border: #fff;
+
+// 	--btn-secondary-active-color: #1a1a1a;
+// 	--btn-secondary-active-background-color: #fff;
+// 	--btn-secondary-active-border: #1a1a1a;
+
+// 	// Secondary - contrastInvert
+
+// 	--btn-secondary-invert-color: #fff;
+// 	--btn-secondary-invert-background-color: #1a1a1a;
+// 	--btn-secondary-invert-border: 2px solid #fff;
+
+// 	--btn-secondary-invert-hover-color: #1a1a1a;
+// 	--btn-secondary-invert-hover-background-color: #fff;
+// 	--btn-secondary-invert-hover-border: #fff;
+
+// 	--btn-secondary-invert-focus-color: #fff;
+// 	--btn-secondary-invert-focus-background-color: #434f5a;
+// 	--btn-secondary-invert-focus-border: #fff;
+
+// 	--btn-secondary-invert-active-color: #1a1a1a;
+// 	--btn-secondary-invert-active-background-color: #fff;
+// 	--btn-secondary-invert-active-border: #1a1a1a;
+
+// 	// sale:
+// 	--btn-sale-border: 2px solid #d91b3e;
+
+// 	// Generic Button Styles
+
+// 	--btn-disabled-color: #fff;
+// 	--btn-disabled-background-color: #dfdfdf;
+
+// 	--btn-normal-font-size: 16px;
+// 	--btn-normal-radius: 50px;
+// 	--btn-normal-padding: 10px 50px;
+
+// 	--btn-small-fontsize: 13px;
+// 	--btn-small-padding: 3px 30px;
+// 	--btn-small-radius: var(--btn-normal-radius);
+// 	--btn-fontweight: normal;
+// }

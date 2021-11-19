@@ -12,7 +12,7 @@ const MobileNavigation: FC<IMobileNavigation> = ({ navPoints }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div className="">
+		<div className="bg-scroll">
 			{isOpen ? (
 				<ul className="">
 					{navPoints.map((navPoint, index) => (

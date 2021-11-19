@@ -1,0 +1,88 @@
+// .root {
+// 	font-weight: bolder;
+// 	font-size: large;
+// 	line-height: normal;
+// 	cursor: pointer;
+// 	text-decoration: none;
+// 	text-align: center;
+// 	vertical-align: middle;
+// 	white-space: normal;
+
+// 	&[disabled],
+// 	&[aria-disabled] {
+// 		cursor: default;
+// 		opacity: 0.5;
+// 	}
+
+// 	&.primary {
+// 		color: var(--btn-primary-color);
+// 		background-color: var(--btn-primary-background-color);
+// 		border: var(--btn-primary-border);
+// 		padding: var(--btn-normal-padding);
+// 		border-radius: var(--btn-normal-radius);
+
+// 		&:not([disabled]):hover {
+// 			color: var(--btn-primary-hover-color);
+// 			background-color: var(--btn-primary-hover-background-color);
+// 			border-color: var(--btn-primary-hover-border);
+// 		}
+
+// 		&:not([disabled]):focus {
+// 			background-color: var(--btn-primary-focus-background-color);
+// 			border-color: var(--btn-primary-focus-border);
+// 			box-shadow: 0 0 0 2px var(--btn-primary-focus-background-color);
+// 		}
+
+// 		&:not([disabled]):active {
+// 			background-color: var(--btn-primary-active-background-color);
+// 			border-color: var(--btn-primary-active-border);
+// 			box-shadow: none;
+// 		}
+
+// 		svg {
+// 			fill: var(--btn-primary-active-color);
+// 		}
+
+// 		&.small {
+// 			padding: var(--btn-small-padding);
+// 			font-size: var(--btn-small-fontsize);
+// 			border-radius: var(--btn-small-radius);
+// 		}
+
+// 		&.contrastInvert {
+// 			color: var(--btn-primary-invert-color);
+// 			background-color: var(--btn-primary-invert-background-color);
+// 			border: var(--btn-primary-invert-border);
+
+// 			&:not([disabled]):hover {
+// 				color: var(--btn-primary-invert-hover-color);
+// 				border-color: var(--btn-primary-invert-hover-border);
+// 				background-color: var(--btn-primary-invert-hover-background-color);
+
+// 				svg {
+// 					fill: var(--btn-primary-invert-hover-color);
+// 				}
+// 			}
+
+// 			&:not([disabled]):focus {
+// 				color: var(--btn-primary-invert-focus-color);
+// 				border-color: var(--btn-primary-invert-focus-border);
+// 				box-shadow: 0 0 0 2px var(--btn-primary-invert-focus-color);
+
+// 				svg {
+// 					fill: var(--btn-primary-invert-focus-color);
+// 				}
+// 			}
+
+// 			&:not([disabled]):active {
+// 				color: var(--btn-primary-invert-active-color);
+// 				border-color: var(--btn-primary-invert-active-border);
+// 				box-shadow: none;
+
+// 				svg {
+// 					fill: var(--btn-primary-invert-active-color);
+// 				}
+// 			}
+// 		}
+// 	}
+// }
