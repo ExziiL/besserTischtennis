@@ -12,9 +12,9 @@ const DasBinIch: FC<IDasBinIch> = () => {
 					<h1>Das bin ich:</h1>
 					<h1>Giole Vulcano</h1>
 				</div>
-				<p>Ich bin 20 Jahre jung und komme aus Besigheim, das liegt ca. 25 km entfernt von Stuttgart.</p>
+				<p className="mt-4 font-semibold text-gray-500">Ich bin 20 Jahre jung und komme aus Besigheim, das liegt ca. 25 km entfernt von Stuttgart.</p>
 			</div>
-			<Timeline />
+			<Timeline className="" />
 		</div>
 	);
 };

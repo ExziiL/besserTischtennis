@@ -7,7 +7,7 @@ export interface IMenuBar {
 
 const MenuBar: FC<IMenuBar> = ({ icon, onClick }) => {
 	return (
-		<div className="absolute bottom-0 flex items-center w-full h-20 pl-6 bg-gray-400">
+		<div className="flex items-center w-full h-20 pl-6 bg-gray-400 ">
 			<img src={icon} alt="NavIcon" className="w-10 h-10" onClick={onClick} />
 		</div>
 	);
