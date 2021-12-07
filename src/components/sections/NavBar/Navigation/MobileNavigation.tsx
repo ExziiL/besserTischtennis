@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 
-import MenuBar from '../../../organisms/MenuBar/MenuBar';
+import MenuBar from './MenuBar/MenuBar';
 import hamburgerSVG from '../../../../css/icons/menu-burger.svg';
 import cross from '../../../../css/icons/cross.svg';
 
