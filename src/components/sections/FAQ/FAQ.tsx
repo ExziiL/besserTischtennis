@@ -9,6 +9,10 @@ const FAQ: FC<IFAQ> = () => {
 		<div className="m-4">
 			<h1>Frequency Asked Questions</h1>
 			<FAQModal />
+			<FAQModal />
+			<FAQModal />
+			<FAQModal />
+			<FAQModal />
 		</div>
 	);
 };
