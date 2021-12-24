@@ -7,6 +7,7 @@ import Service from './components/sections/Service/Service';
 import Erstgespräch from './components/sections/Erstgespräch/Erstgespräch';
 import Reviews from './components/sections/Reviews/Reviews';
 import FAQ from './components/sections/FAQ/FAQ';
+import Footer from './components/sections/Footer/Footer';
 
 import { useViewport } from './hooks/useViewport';
 
@@ -16,13 +17,14 @@ function App() {
 
 	return (
 		<div className="max-w-[1280px] mx-auto">
-			{/* <NavBar navPoints={[]} /> */}
-			{width > breakpoint ? <Header /> : null}
-			{/* <DasBinIch /> */}
-			{/* <Service /> */}
-			{/* <Erstgespräch /> */}
-			{/* <Reviews /> */}
+			<NavBar navPoints={[]} />
+			<Header />
+			<DasBinIch />
+			<Service />
+			<Erstgespräch />
+			<Reviews />
 			<FAQ />
+			<Footer />
 		</div>
 	);
 }

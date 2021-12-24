@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 
-import MenuBar from './MenuBar/MenuBar';
+import Svg from '../../../atoms/Svg/Svg';
 import hamburgerSVG from '../../../../css/icons/menu-burger.svg';
 import cross from '../../../../css/icons/cross.svg';
 
@@ -25,8 +25,8 @@ const MobileNavigation: FC<IMobileNavigation> = ({ navPoints }) => {
 				</ul>
 			) : null}
 
-			<div>
-				<MenuBar icon={!isOpen ? hamburgerSVG : cross} onClick={() => setIsOpen(!isOpen)} />
+			<div className="flex flex-row-reverse items-center w-full h-16 p-6 bg-gray-400 ">
+				<Svg icon={!isOpen ? hamburgerSVG : cross} width={25} onClick={() => setIsOpen(!isOpen)} />
 			</div>
 		</div>
 	);

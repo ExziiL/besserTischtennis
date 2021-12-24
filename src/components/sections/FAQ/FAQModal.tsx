@@ -13,7 +13,7 @@ const FAQModal: FC<IFAQModal> = () => {
 	const toggleOpen = () => setIsOpen(!isOpen);
 
 	return (
-		<div className="px-4 py-3 my-4 bg-gray-100 rounded-sm sm:my-4">
+		<div className="px-4 py-3 my-4 bg-white rounded-sm sm:my-4">
 			<div className="flex justify-between">
 				<h1 className="flex items-center mb-0 text-lg font-semibold">How long should a car repair take?</h1>
 				<div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ff6433] flex justify-center items-center" onClick={toggleOpen}>

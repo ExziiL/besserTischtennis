@@ -8,7 +8,7 @@ export interface IHeader {}
 const Header: FC<IHeader> = () => {
 	return (
 		<div className="m-4">
-			<div className="text-4xl font-bold leading-9 ">
+			<div className="text-4xl font-semibold leading-9 ">
 				<h1>BesserTischtennis</h1>
 				<h1>- Join the club!</h1>
 			</div>
