@@ -13,9 +13,9 @@ export interface IService {}
 
 const Service: FC<IService> = () => {
 	return (
-		<div className="bg-[#F2F2F2]">
+		<div className="bg-[#F2F2F2] py-12">
 			<div className="px-4 text-center">
-				<h1 className="px-4 pt-4 text-xl font-medium">Unser Service</h1>
+				<h1 className="px-4 text-xl font-medium">Unser Service</h1>
 				<h2 className="py-2 text-3xl font-semibold">Wir bieten Ihnen zahlreiche Services an</h2>
 			</div>
 			<section className="grid grid-cols-2 gap-2 p-4 sm:grid-cols-3">

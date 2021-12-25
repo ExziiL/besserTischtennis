@@ -20,8 +20,8 @@ const Reviews: FC<IReviews> = ({}) => {
 	const checkSlidesPerView = () => (width > breakpoint ? 2 : 1);
 
 	return (
-		<div className="bg-[#F2F2F2] ">
-			<h1 className="pt-6 pb-2 text-xl font-semibold text-center">Our Customers say the nicest things about our service</h1>
+		<div className="bg-[#F2F2F2] py-12">
+			<h1 className="pb-2 text-xl font-semibold text-center ">Our Customers say the nicest things about our service</h1>
 
 			{/* <Swiper slidesPerView={checkSlidesPerView()} pagination={{ dynamicBullets: false }}> */}
 			<Swiper slidesPerView={checkSlidesPerView()}>
