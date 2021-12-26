@@ -13,7 +13,7 @@ const NavBar: FC<INavBar> = () => {
 	const navPoints = ['Startseite', 'Über mich', 'Lehrgänge', 'Blog', 'Kontakt'];
 
 	const { width } = useViewport();
-	const breakpoint = 640;
+	const breakpoint = 768;
 
 	return <nav className="">{width < breakpoint ? <MobileNavigation navPoints={navPoints} /> : <Navigation />}</nav>;
 };

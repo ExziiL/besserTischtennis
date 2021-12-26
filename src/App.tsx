@@ -16,7 +16,7 @@ function App() {
 	const breakpoint = 640;
 
 	return (
-		<div className="max-w-[1280px] mx-auto">
+		<div className="max-w-[1280px] mx-auto 2xl:px-0">
 			<NavBar navPoints={[]} />
 			<Header />
 			<DasBinIch />
