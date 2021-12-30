@@ -12,19 +12,20 @@ const MobileNavigation: FC<IMobileNavigation> = ({ navPoints }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div className="sticky z-10 bottom-14 ">
-			{isOpen ? (
-				<ul className="">
-					{navPoints.map((navPoint, index) => (
-						<p key={index} className="p-10 text-xl bg-gray-300 ">
-							<a href="#" className="">
-								{navPoint}
-							</a>
-						</p>
-					))}
-				</ul>
-			) : null}
-
+		<div className="fixed bottom-0 w-full">
+			<div className={`ease-out duration-200 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+				{isOpen ? (
+					<ul className="">
+						{navPoints.map((navPoint, index) => (
+							<p key={index} className="p-10 text-xl bg-gray-300 ">
+								<a href="#" className="">
+									{navPoint}
+								</a>
+							</p>
+						))}
+					</ul>
+				) : null}
+			</div>
 			<div className="flex flex-row-reverse items-center w-full h-16 p-6 bg-gray-400 ">
 				<Svg icon={!isOpen ? hamburgerSVG : cross} width={25} onClick={() => setIsOpen(!isOpen)} />
 			</div>

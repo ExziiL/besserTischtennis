@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 
 import TimelineYear from './TimelineYear';
-import Button from '../../../atoms/Button/PrimaryButton';
 
 export interface ITimeline {
 	className?: string;
@@ -17,7 +16,6 @@ const Timeline: FC<ITimeline> = ({ className }) => {
 				<TimelineYear year={2020} headline="Erster Lehrgang im Aktiven-Bereich" paragraph="Aufgrund des Feedbacks war ich motiviert weiter zu machen" />
 				<TimelineYear year={2020} headline="Gründung von BesserTischtennis" paragraph="Gemeinsam mit meinem Bruder gründete ich BesserTischtennis, um noch mehr Spieler zu unterstützen" isLast={true} />
 			</div>
-			<Button name="Mehr erfahren" className="" />
 		</div>
 	);
 };

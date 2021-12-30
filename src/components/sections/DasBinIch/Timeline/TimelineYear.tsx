@@ -12,14 +12,14 @@ const TimelineYear: FC<ITimelineYear> = ({ year, headline, paragraph, isLast }) 
 		<div className="flex">
 			<div>
 				{/* Kreise mit den Jahreszahlen */}
-				<div className="inline-flex items-center justify-center flex-shrink-0 w-14 h-14 sm:w-[72px] sm:h-[72px] rounded-full text-neutral-600 bg-[#661CE7] sm:mr-10">
+				<div className="inline-flex items-center justify-center flex-shrink-0 w-14 h-14 sm:w-[72px] sm:h-[72px] rounded-full text-neutral-600 bg-[#661CE7]">
 					<div className="flex justify-center text-xl text-white sm:text-2xl">{year}</div>
 					<div className="absolute w-[42px] h-[42px] rounded-full bg-white mt-[68px] sm:mt-[74px] opacity-25"></div>
 				</div>
 
 				{/* Dotted Line */}
 				<div className="flex justify-center pt-4 pb-6 divide-x-2">
-					<hr className={`h-10 ${isLast ? null : 'border'} border-[#FF6433] border-dashed`} />
+					<hr className={`h-10 ${isLast ? null : 'border'} border-[#FF6433] border-2 border-dashed `} />
 				</div>
 			</div>
 

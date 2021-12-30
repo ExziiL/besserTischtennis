@@ -8,10 +8,12 @@ export interface IPrimaryButton {
 
 const PrimaryButton: FC<IPrimaryButton> = ({ name, disabled, className }) => {
 	return (
-		<button className={`px-8 py-3 bg-[#0433df] text-white rounded-lg ${className} hover:bg-[#0429b1]`} disabled={disabled} type="button">
-			{/* <button className={`px-8 py-3 bg-[#38b6ff] text-white rounded-xl ${className}`} disabled={disabled} type="button"> */}
-			{name}
-		</button>
+		<div className={`${className}`}>
+			<button className={`px-8 py-3 bg-[#0433df] text-white rounded-lg hover:bg-[#0429b1]`} disabled={disabled} type="button">
+				{/* <button className={`px-8 py-3 bg-[#38b6ff] text-white rounded-xl ${className}`} disabled={disabled} type="button"> */}
+				{name}
+			</button>
+		</div>
 	);
 };
 
