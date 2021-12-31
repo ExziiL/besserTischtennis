@@ -12,7 +12,7 @@ const MobileNavigation: FC<IMobileNavigation> = ({ navPoints }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div className="fixed bottom-0 w-full">
+		<div className="fixed bottom-0 z-50 w-full">
 			<div className={`ease-out duration-200 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
 				{isOpen ? (
 					<ul className="">
