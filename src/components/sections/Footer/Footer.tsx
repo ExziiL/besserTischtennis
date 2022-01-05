@@ -10,7 +10,7 @@ export interface IFooter {}
 
 const Footer: FC<IFooter> = () => {
 	return (
-		<div className="text-white">
+		<div className="text-white xl:shadow-2xl">
 			{/* ------------------  Linke Seite ------------------ */}
 			<div className="sm:flex justify-between bg-[#1E1B1B] py-12 px-8">
 				<div>
