@@ -4,10 +4,7 @@ import FAQModal from './FAQModal';
 
 import questions from './questions';
 
-export interface IFAQ {
-	question: string;
-	answer: string;
-}
+export interface IFAQ {}
 
 const FAQ: FC<IFAQ> = () => {
 	return (

@@ -15,13 +15,13 @@ const Header: FC<IHeader> = () => {
 					<h1>Hi! Wir sind</h1>
 					<h1>besserTischtennis</h1>
 				</div>
-				<div className="pt-4 lg:pt-12">Wir sind dein Ansprechpartner, wenn du besser im Tischtennis werden möchtest. Dies erreichen wir durch Individual- oder Gruppentrainings.</div>
+				<div className="pt-4 lg:pt-12">Unser Ziel ist es ehrgeizigen und ambitionierten Spielern eine Plattform zu bieten, die sie optimal dabei unterstützt, erfolgreicher im Tischtennis zu werden.</div>
 				<div className="py-8 md:pt-6 md:pb-0 lg:pt-16">
 					<PrimaryButton name="Mehr Informationen" className="text-sm font-bold" />
 				</div>
 			</div>
 			<div className="md:w-1/2">
-				<Image src={tpms} className="" />
+				<Image src={tpms} className="rounded-lg xl:shadow-2xl" />
 			</div>
 		</div>
 	);

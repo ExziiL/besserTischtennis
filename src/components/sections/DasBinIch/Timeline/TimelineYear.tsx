@@ -19,7 +19,7 @@ const TimelineYear: FC<ITimelineYear> = ({ year, headline, paragraph, isLast }) 
 
 				{/* Dotted Line */}
 				<div className="flex justify-center pt-4 pb-6 divide-x-2">
-					<hr className={`h-10 ${isLast ? null : 'border'} border-[#FF6433] border-2 border-dashed `} />
+					<hr className={`h-10 ${isLast ? null : 'border-2'} border-[#FF6433] border-dashed `} />
 				</div>
 			</div>
 

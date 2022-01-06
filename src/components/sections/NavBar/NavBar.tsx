@@ -10,7 +10,7 @@ export interface INavBar {
 }
 
 const NavBar: FC<INavBar> = () => {
-	const navPoints = ['Startseite', 'Über mich', 'Lehrgänge', 'Blog', 'Kontakt'];
+	const navPoints = ['Startseite', 'Über mich', 'Service', 'Erstgespräch', 'Bewertungen', 'FAQ'];
 
 	const { width } = useViewport();
 	const breakpoint = 768;

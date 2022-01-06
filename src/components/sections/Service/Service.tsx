@@ -12,7 +12,7 @@ export interface IService {}
 
 const Service: FC<IService> = () => {
 	return (
-		<div className="bg-[#F2F2F2] py-12 lg:py-20 px-0 md:px-10 lg:px-24 xl:px-36 xl:shadow-2xl">
+		<div className="bg-[#F2F2F2] py-12 lg:py-20 px-0 md:px-10 lg:px-24 xl:px-36">
 			<div className="flex flex-col items-center justify-center w-full px-4 text-center">
 				<h1 className="px-4 text-xl font-medium">Unser Service</h1>
 				<h2 className="pt-4 pb-6 sm:pb-12 text-5xl font-semibold md:w-[600px]">Wir bieten zahlreiche Services an</h2>

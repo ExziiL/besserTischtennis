@@ -7,7 +7,7 @@ export interface IReviewCard {}
 const ReviewCard: FC<IReviewCard> = ({}) => {
 	return (
 		<div className="p-4">
-			<div className="p-4 bg-white rounded-md shadow-lg">
+			<div className="p-12 bg-white rounded-md shadow-md">
 				{/* Name Section */}
 				<div className="flex items-center pb-3 space-x-4">
 					<Img src="https://via.placeholder.com/25" alt="review" className="w-10 h-10 rounded-full" />

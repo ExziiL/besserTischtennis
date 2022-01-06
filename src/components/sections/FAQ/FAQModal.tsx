@@ -16,9 +16,9 @@ const FAQModal: FC<IFAQModal> = ({ question, answer }) => {
 	const toggleOpen = () => setIsOpen(!isOpen);
 
 	return (
-		<div className="px-4 py-3 my-2 bg-white rounded-sm">
-			<div className="flex justify-between cursor-pointer select-none" onClick={toggleOpen}>
-				<h1 className="flex items-center mb-0 text-lg font-semibold">{question}</h1>
+		<div className="px-4 py-3 my-2 bg-white rounded-sm md:py-5 md:px-7">
+			<div className="flex justify-between cursor-pointer select-none " onClick={toggleOpen}>
+				<h1 className="flex items-center mb-0 text-lg font-semibold leading-6">{question}</h1>
 				<div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ff6433] flex justify-center items-center">
 					<Svg icon={isOpen ? minus : plus} width={20} className="" />
 				</div>

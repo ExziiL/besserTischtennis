@@ -9,7 +9,7 @@ import Footer from './components/sections/Footer/Footer';
 
 function App() {
 	return (
-		<div className="max-w-[1280px] mx-auto 2xl:px-0">
+		<div className="max-w-[1280px] mx-auto 2xl:px-0 scroll-smooth">
 			<NavBar navPoints={[]} />
 			<Router>
 				<Routes>
