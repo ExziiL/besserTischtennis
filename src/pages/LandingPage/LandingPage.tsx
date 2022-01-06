@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-import Header from '../../components/sections/Hero/Hero';
-import DasBinIch from '../../components/sections/DasBinIch/DasBinIch';
+import Hero from '../../components/sections/Hero/Hero';
+import AboutMe from '../../components/sections/DasBinIch/AboutMe';
 import Service from '../../components/sections/Service/Service';
 import Erstgespräch from '../../components/sections/Erstgespräch/Erstgespräch';
 import Reviews from '../../components/sections/Reviews/Reviews';
 import FAQ from '../../components/sections/FAQ/FAQ';
 
-const LandingPage = () => {
+export interface ILandingPage {}
+
+const LandingPage: FC<ILandingPage> = () => {
 	return (
 		<div>
-			<Header />
-			<DasBinIch />
+			<Hero idName="heroSection" />
+			<AboutMe idName="aboutMeSection" />
 			<div className="xl:shadow-2xl">
-				<Service />
-				<Erstgespräch />
-				<Reviews />
-				<FAQ />
+				<Service idName="servicesSection" />
+				<Erstgespräch idName="erstgesprächSection" />
+				<Reviews idName="reviewSection" />
+				<FAQ idName="faqSection" />
 			</div>
 		</div>
 	);

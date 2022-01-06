@@ -3,11 +3,17 @@ import React, { FC } from 'react';
 import Timeline from './Timeline/Timeline';
 import Button from '../../atoms/Button/PrimaryButton';
 
-export interface IDasBinIch {}
+import { useNavigation } from '../../../hooks/useNavigation';
 
-const DasBinIch: FC<IDasBinIch> = () => {
+export interface IAboutMe {
+	idName?: string;
+}
+
+const AboutMe: FC<IAboutMe> = ({ idName }) => {
+	const aboutMeRef = useNavigation(idName);
+
 	return (
-		<div className="flex flex-col p-4 mt-12 mb-12 lg:flex-row lg:mt-24 sm:mx-0" id="dasBinIch">
+		<section ref={aboutMeRef} className="flex flex-col p-4 mt-12 mb-12 lg:flex-row lg:mt-40 lg:mb-20 sm:mx-0" id={idName}>
 			<div className="flex flex-col justify-center pb-10 lg:pb-52">
 				<div className="text-5xl font-semibold">
 					<h1>Das bin ich:</h1>
@@ -17,8 +23,8 @@ const DasBinIch: FC<IDasBinIch> = () => {
 				<Button name="Mehr erfahren" className="pt-8" />
 			</div>
 			<Timeline />
-		</div>
+		</section>
 	);
 };
 
-export default DasBinIch;
+export default AboutMe;

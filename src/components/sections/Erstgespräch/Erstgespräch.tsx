@@ -7,13 +7,15 @@ import Button from '../../atoms/Button/PrimaryButton';
 import ErstgesprächDesktop from './ErstgesprächDesktop';
 import ErstgesprächMobile from './ErstgesprächMobile';
 
-export interface IErstgespräch {}
+export interface IErstgespräch {
+	idName: string;
+}
 
-const Erstgespräch: FC<IErstgespräch> = ({}) => {
+const Erstgespräch: FC<IErstgespräch> = ({ idName }) => {
 	const { width } = useViewport();
 	const breakpoint = 640;
 
-	return <div>{width > breakpoint ? <ErstgesprächDesktop /> : <ErstgesprächMobile />}</div>;
+	return <div>{width > breakpoint ? <ErstgesprächDesktop idName={idName} /> : <ErstgesprächMobile />}</div>;
 };
 
 export default Erstgespräch;

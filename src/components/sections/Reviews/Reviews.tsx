@@ -9,19 +9,23 @@ import SwiperCore, { Pagination, Navigation } from 'swiper';
 SwiperCore.use([Pagination, Navigation]);
 
 import { useViewport } from '../../../hooks/useViewport';
+import { useNavigation } from '../../../hooks/useNavigation';
 
 import ReviewCard from './ReviewCard';
 
-export interface IReviews {}
+export interface IReviews {
+	idName: string;
+}
 
-const Reviews: FC<IReviews> = ({}) => {
+const Reviews: FC<IReviews> = ({ idName }) => {
 	const { width } = useViewport();
 	const breakpoint = 640;
+	const reviewsRef = useNavigation(idName);
 
 	const checkSlidesPerView = () => (width > breakpoint ? 2 : 1);
 
 	return (
-		<div className="bg-[#F2F2F2] py-12">
+		<div ref={reviewsRef} className="bg-[#F2F2F2] py-12" id={idName}>
 			<h1 className="pb-2 text-xl font-semibold text-center ">Our Customers say the nicest things about our service</h1>
 			<div className="flex max-w-5xl m-auto">
 				<Swiper slidesPerView={checkSlidesPerView()} pagination={{ dynamicBullets: false }} navigation={{ prevEl: '.prev', nextEl: '.next' }}>

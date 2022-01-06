@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 
+import { useNavigation } from '../../../hooks/useNavigation';
+
 import ServiceField from './ServiceField';
 import tTSchläger from '../../../css/icons/table-tennis-solid.svg';
 import user from '../../../css/icons/user-solid.svg';
@@ -8,14 +10,18 @@ import food from '../../../css/icons/utensils-solid.svg';
 import dumbbell from '../../../css/icons/dumbbell-solid.svg';
 import chalkboardTeacher from '../../../css/icons/chalkboard-teacher-solid.svg';
 
-export interface IService {}
+export interface IService {
+	idName?: string;
+}
 
-const Service: FC<IService> = () => {
+const Service: FC<IService> = ({ idName }) => {
+	const serviceRef = useNavigation(idName);
+
 	return (
-		<div className="bg-[#F2F2F2] py-12 lg:py-20 px-0 md:px-10 lg:px-24 xl:px-36">
+		<div ref={serviceRef} className="bg-[#F2F2F2] py-12 lg:py-20 px-0 md:px-10 lg:px-24 xl:px-36" id={idName}>
 			<div className="flex flex-col items-center justify-center w-full px-4 text-center">
 				<h1 className="px-4 text-xl font-medium">Unser Service</h1>
-				<h2 className="pt-4 pb-6 sm:pb-12 text-5xl font-semibold md:w-[600px]">Wir bieten zahlreiche Services an</h2>
+				<h2 className="pt-4 pb-6 sm:pb-10 text-5xl font-semibold md:w-[600px]">Wir bieten Ihnen zahlreiche Services an</h2>
 			</div>
 			<section className="grid grid-cols-2 gap-2 p-4 sm:grid-cols-3">
 				<ServiceField header="Einzeltraining" icon={user} />

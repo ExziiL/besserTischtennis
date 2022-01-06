@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
 
-import { useViewport } from '../../../hooks/useViewport';
-
 import Button from '../../atoms/Button/PrimaryButton';
 
 export interface IErstgespräch {}

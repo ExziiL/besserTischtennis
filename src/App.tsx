@@ -6,18 +6,21 @@ import AboutMe from './pages/AboutMe';
 
 import NavBar from './components/sections/NavBar/NavBar';
 import Footer from './components/sections/Footer/Footer';
+import NavProvider from './context/NavContext';
 
 function App() {
 	return (
 		<div className="max-w-[1280px] mx-auto 2xl:px-0 scroll-smooth">
-			<NavBar navPoints={[]} />
-			<Router>
-				<Routes>
-					<Route path="/" element={<LandingPage />} />
-					<Route path="/about" element={<AboutMe />} />
-				</Routes>
-			</Router>
-			<Footer />
+			<NavProvider>
+				<NavBar navPoints={[]} />
+				<Router>
+					<Routes>
+						<Route path="/" element={<LandingPage />} />
+						<Route path="/about" element={<AboutMe />} />
+					</Routes>
+				</Router>
+				<Footer />
+			</NavProvider>
 		</div>
 	);
 }

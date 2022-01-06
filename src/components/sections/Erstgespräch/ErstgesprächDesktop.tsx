@@ -3,11 +3,17 @@ import React, { FC } from 'react';
 import Img from '../../atoms/Image/Image';
 import Button from '../../atoms/Button/PrimaryButton';
 
-export interface IErstgesprächDesktop {}
+import { useNavigation } from '../../../hooks/useNavigation';
 
-const ErstgesprächDesktop: FC<IErstgesprächDesktop> = ({}) => {
+export interface IErstgesprächDesktop {
+	idName?: string;
+}
+
+const ErstgesprächDesktop: FC<IErstgesprächDesktop> = ({ idName }) => {
+	const erstgesprächRef = useNavigation(idName);
+
 	return (
-		<div className="relative h-64">
+		<div className="relative h-64" id={idName} ref={erstgesprächRef}>
 			<div className="absolute bg-[#FF6433] h-full sm:w-[400px] p-4 sm:ml-16 md:ml-36 lg:ml-64">
 				<h1 className="mb-8 text-4xl font-semibold text-white">Buche jetzt ein kostenloses Erstgespräch</h1>
 				<Button name="Zum Erstgespräch" />
