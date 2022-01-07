@@ -25,8 +25,8 @@ const Reviews: FC<IReviews> = ({ idName }) => {
 	const checkSlidesPerView = () => (width > breakpoint ? 2 : 1);
 
 	return (
-		<div ref={reviewsRef} className="bg-[#F2F2F2] py-12" id={idName}>
-			<h1 className="pb-2 text-xl font-semibold text-center ">Our Customers say the nicest things about our service</h1>
+		<div ref={reviewsRef} className="bg-[#F2F2F2] py-12 scroll-mt-6" id={idName}>
+			<h1 className="pb-4 text-2xl font-semibold text-center md:pb-8 md:pt-10 sm:text-3xl ">Das sagen unsere Kunden über uns:</h1>
 			<div className="flex max-w-5xl m-auto">
 				<Swiper slidesPerView={checkSlidesPerView()} pagination={{ dynamicBullets: false }} navigation={{ prevEl: '.prev', nextEl: '.next' }}>
 					{/* <Swiper slidesPerView={checkSlidesPerView()}> */}

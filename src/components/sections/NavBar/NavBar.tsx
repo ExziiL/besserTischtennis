@@ -5,17 +5,13 @@ import MobileNavigation from './Navigation/MobileNavigation';
 
 import { useViewport } from '../../../hooks/useViewport';
 
-export interface INavBar {
-	navPoints: string[];
-}
+export interface INavBar {}
 
 const NavBar: FC<INavBar> = () => {
-	const navPoints = ['Startseite', 'Über mich', 'Service', 'Erstgespräch', 'Bewertungen', 'FAQ'];
-
 	const { width } = useViewport();
-	const breakpoint = 768;
+	const breakpoint = 925;
 
-	return <nav className="">{width < breakpoint ? <MobileNavigation navPoints={navPoints} /> : <Navigation navPoints={navPoints} />}</nav>;
+	return <nav className="">{width < breakpoint ? <MobileNavigation /> : <Navigation />}</nav>;
 };
 
 export default NavBar;

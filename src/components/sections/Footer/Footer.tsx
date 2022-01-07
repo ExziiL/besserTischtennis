@@ -17,9 +17,9 @@ const Footer: FC<IFooter> = () => {
 		// oben drüber ist die FullPageWidthWrapper Version des Footers (mit dem w-screen)
 		<div className="text-white xl:shadow-2xl">
 			{/* ------------------  Linke Seite ------------------ */}
-			<div className="sm:flex justify-between bg-[#1E1B1B] py-12 px-8">
+			<div className="sm:flex sm:space-x-20 md:space-x-24 lg:space-x-40 justify-center bg-[#1E1B1B] py-12 px-8">
 				<div>
-					<div className="text-3xl">Get in touch with us for your service</div>
+					<div className="text-3xl">Besuch uns doch gerne auf Social Media</div>
 					<div className="pt-6">
 						<ul className="flex space-x-3">
 							<li>
@@ -38,7 +38,7 @@ const Footer: FC<IFooter> = () => {
 					</div>
 				</div>
 				{/* ------------------  Rechte Seite ------------------ */}
-				<div className="pt-12 space-y-4 ">
+				<div className="pt-12 space-y-4 sm:pt-0 ">
 					{/* ------------------ Tel. Nr. ------------------ */}
 					<div>
 						<div className="text-sm text-[#909090]">Tel. Nr.</div>
@@ -47,18 +47,18 @@ const Footer: FC<IFooter> = () => {
 					{/* ------------------ Anschrift ------------------ */}
 					<div>
 						<div className="text-sm text-[#909090]">Adresse</div>
-						<div>NH 234 Public Square San Francisco 65368</div>
+						<div>012345 Stuttgart, Stuttgarterstr. 40</div>
 					</div>
 					{/* ------------------ Trainingszeiten ------------------ */}
 					<div>
 						<div className="text-sm text-[#909090]">Unsere Trainingszeiten</div>
-						<div>123 456 789</div>
+						<div>12-14 Uhr</div>
 					</div>
 				</div>
 				{/* ------------------  Unterseite ------------------ */}
 			</div>
-			<div className="bg-[#181313] py-6 px-8 text-xs">
-				<ul className="flex justify-between text-[#ffffffb9]">
+			<div className="bg-[#181313] py-6 px-8 text-xs ">
+				<ul className="flex justify-between items-center m-auto text-[#ffffffb9] max-w-sm">
 					<li>Home</li>
 					<li>About us</li>
 					<li>Services</li>

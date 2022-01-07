@@ -11,7 +11,7 @@ export interface ILandingPage {}
 
 const LandingPage: FC<ILandingPage> = () => {
 	return (
-		<div>
+		<div className="">
 			<Hero idName="heroSection" />
 			<AboutMe idName="aboutMeSection" />
 			<div className="xl:shadow-2xl">

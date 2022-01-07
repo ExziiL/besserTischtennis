@@ -18,7 +18,7 @@ const Service: FC<IService> = ({ idName }) => {
 	const serviceRef = useNavigation(idName);
 
 	return (
-		<div ref={serviceRef} className="bg-[#F2F2F2] py-12 lg:py-20 px-0 md:px-10 lg:px-24 xl:px-36" id={idName}>
+		<div ref={serviceRef} className="bg-[#F2F2F2] py-12 lg:py-20 px-0 md:px-10 lg:px-24 xl:px-36 scroll-mt-6" id={idName}>
 			<div className="flex flex-col items-center justify-center w-full px-4 text-center">
 				<h1 className="px-4 text-xl font-medium">Unser Service</h1>
 				<h2 className="pt-4 pb-6 sm:pb-10 text-5xl font-semibold md:w-[600px]">Wir bieten Ihnen zahlreiche Services an</h2>

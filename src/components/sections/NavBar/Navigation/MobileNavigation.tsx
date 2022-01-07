@@ -4,11 +4,16 @@ import Svg from '../../../atoms/Svg/Svg';
 import hamburgerSVG from '../../../../css/icons/menu-burger.svg';
 import cross from '../../../../css/icons/cross.svg';
 
+import NavLink from './NavLink';
+import { navLinks } from './navLinks';
+import './Navigation.scss';
+
 export interface IMobileNavigation {
-	navPoints: string[];
+	navLinkId?: string;
+	scrollToId?: string;
 }
 
-const MobileNavigation: FC<IMobileNavigation> = ({ navPoints }) => {
+const MobileNavigation: FC<IMobileNavigation> = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
@@ -16,13 +21,18 @@ const MobileNavigation: FC<IMobileNavigation> = ({ navPoints }) => {
 			<div className={`ease-out duration-200 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
 				{isOpen ? (
 					<ul className="">
-						{navPoints.map((navPoint, index) => (
+						<div className="p-10 text-xl bg-gray-300">
+							{/* {navPoints.map((navPoint, index) => (
 							<p key={index} className="p-10 text-xl bg-gray-300 ">
 								<a href="#" className="">
 									{navPoint}
 								</a>
 							</p>
-						))}
+						))} */}
+							{navLinks.map(({ navLinkId, scrollToId }, index) => (
+								<NavLink key={index} navLinkId={navLinkId} scrollToId={scrollToId} />
+							))}
+						</div>
 					</ul>
 				) : null}
 			</div>

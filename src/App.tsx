@@ -12,7 +12,7 @@ function App() {
 	return (
 		<div className="max-w-[1280px] mx-auto 2xl:px-0 scroll-smooth">
 			<NavProvider>
-				<NavBar navPoints={[]} />
+				<NavBar />
 				<Router>
 					<Routes>
 						<Route path="/" element={<LandingPage />} />
