@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import PrimaryButton from '../../atoms/Button/PrimaryButton';
 import Image from '../../atoms/Image/Image';
 
-import tpms from '../../../css/pictures/TischtennisplatteMitSchlaeger.jpeg';
+import tpms from '../../../css/pictures/Tischtennisplatte_mit_schlaeger.jpeg';
 import { useNavigation } from '../../../hooks/useNavigation';
 
 export interface IHero {

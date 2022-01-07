@@ -9,7 +9,7 @@ export interface INavBar {}
 
 const NavBar: FC<INavBar> = () => {
 	const { width } = useViewport();
-	const breakpoint = 925;
+	const breakpoint = 800;
 
 	return <nav className="">{width < breakpoint ? <MobileNavigation /> : <Navigation />}</nav>;
 };

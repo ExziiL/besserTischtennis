@@ -4,6 +4,8 @@ import Img from '../../atoms/Image/Image';
 import Button from '../../atoms/Button/PrimaryButton';
 
 import { useNavigation } from '../../../hooks/useNavigation';
+import bild1 from '../../../css/pictures/Schläger_Ball_auf_Tisch_Vorne.jpeg';
+import bild2 from '../../../css/pictures/Gioele_mit_Tisch.jpeg';
 
 export interface IErstgesprächDesktop {
 	idName?: string;
@@ -19,8 +21,8 @@ const ErstgesprächDesktop: FC<IErstgesprächDesktop> = ({ idName }) => {
 				<Button name="Zum Erstgespräch" />
 			</div>
 			<div className="flex h-full">
-				<Img src="https://www.fineart-panorama.de/332518/panoramabild-polarlicht-troms-norwegen-grotfjord.jpg" alt="Panoramabild" className="object-cover w-1/3 h-full" />
-				<Img src="https://i.auto-bild.de/ir_img/1/7/6/3/5/7/9/Alle-Auto-Neuheiten-2019-1200x800-bbcf8a2e46bd3f1f.jpg" alt="Panoramabild" className="object-cover w-2/3 h-full" />
+				<Img src={bild1} alt="Panoramabild" className="object-cover w-1/3 h-full " />
+				<Img src={bild2} alt="Panoramabild" className="object-cover w-2/3 h-full " />
 			</div>
 		</div>
 	);
