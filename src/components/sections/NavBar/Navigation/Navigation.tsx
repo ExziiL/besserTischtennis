@@ -5,7 +5,7 @@ import './Navigation.scss';
 
 import FullPageWidthWrapper from '../../../utils/FullPageWidthWrapper';
 import Image from '../../../atoms/Image/Image';
-import logo from '../../../../css/pictures/logo.png';
+import logo from '../../../../css/pictures/Logo.png';
 
 export interface INavigation {
 	navLinkId?: string;
