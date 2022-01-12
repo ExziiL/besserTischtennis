@@ -24,8 +24,8 @@ const TimelineYear: FC<ITimelineYear> = ({ year, headline, paragraph, isLast }) 
 			</div>
 
 			{/* Überschrift und Text */}
-			<div className="pt-[15px] pl-4">
-				<h1 className="text-xl font-semibold">{headline}</h1>
+			<div className="pt-[21px] pl-4">
+				<h1 className="text-xl font-semibold md:text-2xl">{headline}</h1>
 				<p className="font-semibold text-gray-500">{paragraph}</p>
 			</div>
 		</div>

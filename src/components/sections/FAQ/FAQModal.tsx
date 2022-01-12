@@ -17,13 +17,13 @@ const FAQModal: FC<IFAQModal> = ({ question, answer }) => {
 
 	return (
 		<div className="px-4 py-3 my-2 bg-white rounded-sm md:py-5 md:px-7">
-			<div className="flex justify-between cursor-pointer select-none " onClick={toggleOpen}>
-				<h1 className="flex items-center mb-0 text-lg font-semibold leading-6">{question}</h1>
-				<div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ff6433] flex justify-center items-center">
+			<div className="flex items-center justify-between cursor-pointer select-none" onClick={toggleOpen}>
+				<h1 className="flex items-center mb-0 font-semibold leading-6 md:text-lg">{question}</h1>
+				<div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#ff6433] flex justify-center items-center min-w-[48px] ml-2">
 					<Svg icon={isOpen ? minus : plus} width={20} className="" />
 				</div>
 			</div>
-			{isOpen ? <p className="pt-2 text-gray-500 pr-14">{answer}</p> : null}
+			{isOpen ? <p className="pt-2 text-sm text-gray-500 md:text-base pr-14">{answer}</p> : null}
 		</div>
 	);
 };
