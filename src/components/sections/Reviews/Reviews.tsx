@@ -15,12 +15,26 @@ import ReviewCard from './ReviewCard';
 
 export interface IReviews {
 	idName: string;
+	name: string;
+	text: string;
+	punkte: number;
 }
 
-const Reviews: FC<IReviews> = ({ idName }) => {
+const Reviews: FC<IReviews> = ({ idName, name, text, punkte }) => {
 	const { width } = useViewport();
-	const breakpoint = 640;
+	const breakpoint = 700;
 	const reviewsRef = useNavigation(idName);
+	const reviews = [
+		{ name: 'Luca', text: 'Sehr sehr guter Lehrgang gewesen. Man konnte viele neue und hilfreiche Sachen mitnehmen. Empfehlenswert für alle die besser im Tischtennis werden möchten.', punkte: 1600 },
+		{ name: 'Patrik', text: 'Es ist ein klasse Lehrgang um seine Tischtennis-Fähigkeiten auf das nächste Level zu heben. Sehr gut organisiert und für jede Leistungsstärke geeignet.', punkte: 1450 },
+		{ name: 'Joshua', text: 'Durch die lockere und positive Art der Trainer war immer gute Stimmung und der Lehrgang somit ein voller Erfolg. Sollte wieder einmal ein Lehrgang von Bessertischtennis stattfinden bin ich sicher wieder am Start!', punkte: 1450 },
+		{
+			name: 'Roman',
+			text: 'Dies war bereits mein zweiter Lehrgang von Bessertischtennis und ich war wieder sehr zufrieden. Beide Tage waren sehr gut und abwechslungsreich strukturiert.',
+			punkte: 1400,
+		},
+		{ name: 'Oliver', text: 'Die Trainer sind individuell auf jeden einzelnen Teilnehmer eingegangen, konnten dadurch Fehler sehr gut analysieren und beheben.', punkte: 1300 },
+	];
 
 	const checkSlidesPerView = () => (width > breakpoint ? 2 : 1);
 
@@ -30,18 +44,12 @@ const Reviews: FC<IReviews> = ({ idName }) => {
 			<div className="flex max-w-5xl m-auto">
 				<Swiper slidesPerView={checkSlidesPerView()} pagination={{ dynamicBullets: false }} navigation={{ prevEl: '.prev', nextEl: '.next' }}>
 					{/* <Swiper slidesPerView={checkSlidesPerView()}> */}
-					<SwiperSlide>
-						<ReviewCard />
-					</SwiperSlide>
-					<SwiperSlide>
-						<ReviewCard />
-					</SwiperSlide>
-					<SwiperSlide>
-						<ReviewCard />
-					</SwiperSlide>
-					<SwiperSlide>
-						<ReviewCard />
-					</SwiperSlide>
+					{reviews.map((review, index) => (
+						<SwiperSlide>
+							<ReviewCard name={review.name} text={review.text} punkte={review.punkte} />
+						</SwiperSlide>
+					))}
+
 					<div className="prev">Prev</div>
 					<div className="next">Next</div>
 				</Swiper>

@@ -10,12 +10,36 @@ import food from '../../../css/icons/utensils-solid.svg';
 import dumbbell from '../../../css/icons/dumbbell-solid.svg';
 import chalkboardTeacher from '../../../css/icons/chalkboard-teacher-solid.svg';
 
+import FlipCard from './FlipCard';
+import './FlipCard.scss';
+
 export interface IService {
 	idName?: string;
 }
 
 const Service: FC<IService> = ({ idName }) => {
 	const serviceRef = useNavigation(idName);
+
+	const cards = [
+		{
+			id: '1',
+			variant: 'hover',
+			front: 'Hover',
+			back: 'Back',
+		},
+		{
+			id: '2',
+			variant: 'click',
+			front: 'Click',
+			back: 'Back',
+		},
+		{
+			id: '3',
+			variant: 'focus',
+			front: 'Focus',
+			back: 'Back',
+		},
+	];
 
 	return (
 		<div ref={serviceRef} className="bg-[#F2F2F2] py-12 lg:py-20 px-0 md:px-10 lg:px-24 xl:px-36 scroll-mt-6" id={idName}>
@@ -32,6 +56,9 @@ const Service: FC<IService> = ({ idName }) => {
 				{/* Den Punkt unter dem Kommentar habe ich raus genommen um auf eine gerade Anzahl zu kommen und da es eigentlich das selbe aussagt wie Vereinslehrgänge? oder nicht?  */}
 				{/* <ServiceField header="BesserTischtennis Lehrgänge" icon={chartLine} /> */}
 				<ServiceField header="Materialberatung" icon={tTSchläger} />
+				{/* {cards.map((card) => (
+					<FlipCard key={card.id} card={card} />
+				))} */}
 			</section>
 		</div>
 	);

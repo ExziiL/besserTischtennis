@@ -1,5 +1,5 @@
 import React, { useContext, FC } from 'react';
-import { NavContext } from '../../../../context/NavContext';
+// import { NavContext } from '../../../../context/NavContext';
 
 export interface INavLink {
 	navLinkId: string;
@@ -9,15 +9,16 @@ export interface INavLink {
 }
 
 const NavLink: FC<INavLink> = ({ navLinkId, scrollToId }) => {
-	const { activeNavLinkId, setActiveNavLinkId } = useContext(NavContext);
+	// const { activeNavLinkId, setActiveNavLinkId } = useContext(NavContext);
 
 	const handleClick = () => {
-		setActiveNavLinkId(navLinkId);
+		// setActiveNavLinkId(navLinkId);
 		document.getElementById(scrollToId)!.scrollIntoView({ behavior: 'smooth' });
 	};
 
 	return (
-		<span id={navLinkId} className={activeNavLinkId === navLinkId ? 'activeClass' : ''} onClick={handleClick}>
+		// <span id={navLinkId} className={activeNavLinkId === navLinkId ? 'activeClass' : ''} onClick={handleClick}>
+		<span id={navLinkId} onClick={handleClick}>
 			{navLinkId}
 		</span>
 	);

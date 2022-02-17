@@ -7,6 +7,8 @@ import FullPageWidthWrapper from '../../../utils/FullPageWidthWrapper';
 import Image from '../../../atoms/Image/Image';
 import logo from '../../../../css/pictures/Logo.png';
 
+import ShopButton from '../../../atoms/Button/ShopButton';
+
 export interface INavigation {
 	navLinkId?: string;
 	scrollToId?: string;
@@ -26,6 +28,9 @@ const Navigation: FC<INavigation> = () => {
 							<NavLink key={index} navLinkId={navLinkId} scrollToId={scrollToId} />
 						))}
 					</ul>
+					<div>
+						<ShopButton name="Zum Shop" className="" />
+					</div>
 				</div>
 			</nav>
 		</FullPageWidthWrapper>
