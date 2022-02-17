@@ -56,9 +56,9 @@ const Service: FC<IService> = ({ idName }) => {
 				{/* Den Punkt unter dem Kommentar habe ich raus genommen um auf eine gerade Anzahl zu kommen und da es eigentlich das selbe aussagt wie Vereinslehrgänge? oder nicht?  */}
 				{/* <ServiceField header="BesserTischtennis Lehrgänge" icon={chartLine} /> */}
 				<ServiceField header="Materialberatung" icon={tTSchläger} />
-				{/* {cards.map((card) => (
+				{cards.map((card) => (
 					<FlipCard key={card.id} card={card} />
-				))} */}
+				))}
 			</section>
 		</div>
 	);

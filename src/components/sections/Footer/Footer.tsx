@@ -23,16 +23,11 @@ const Footer: FC<IFooter> = () => {
 					<div className="pt-6">
 						<ul className="flex space-x-3">
 							<li>
+								{/* Hier statt Facebook, Trustpilot einfügen */}
 								<Svg icon={facebook} width={20} className="stroke-white" />
 							</li>
 							<li>
-								<Svg icon={twitter} width={20} />
-							</li>
-							<li>
 								<Svg icon={instagram} width={20} />
-							</li>
-							<li>
-								<Svg icon={linkedin} width={20} />
 							</li>
 						</ul>
 					</div>
