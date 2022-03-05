@@ -5,7 +5,7 @@ import './Navigation.scss';
 
 import FullPageWidthWrapper from '../../../utils/FullPageWidthWrapper';
 import Image from '../../../atoms/Image/Image';
-import logo from '../../../../css/pictures/Logo.png';
+import logo from '../../../../css/pictures/LogoNeu.jpg';
 
 import ShopButton from '../../../atoms/Button/ShopButton';
 
@@ -15,6 +15,10 @@ export interface INavigation {
 }
 
 const Navigation: FC<INavigation> = () => {
+	const handleClick = () => {
+		window.open('http://shop-bessertischtennis.de');
+	};
+
 	return (
 		<FullPageWidthWrapper className="relative">
 			<nav className="flex items-center justify-center h-20 px-6 shadow-md">
@@ -29,7 +33,7 @@ const Navigation: FC<INavigation> = () => {
 						))}
 					</ul>
 					<div>
-						<ShopButton name="Zum Shop" className="" />
+						<ShopButton name="Zum Shop" className="" onClick={handleClick} />
 					</div>
 				</div>
 			</nav>

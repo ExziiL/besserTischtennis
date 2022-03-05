@@ -20,22 +20,26 @@ export interface IService {
 const Service: FC<IService> = ({ idName }) => {
 	const serviceRef = useNavigation(idName);
 
+	const lehrgängeUndVereinstrainingFront = <ServiceField header="Lehrgänge und Vereinstraining" icon={users} className="sm:col-span-3 sm:col-start-2" />;
+
+	const einzeltrainingFront = <ServiceField className="sm:col-span-3" header="Einzeltraining" icon={user} />;
+
 	const cards = [
 		{
 			id: '1',
 			variant: 'hover',
-			front: 'Hover',
+			front: lehrgängeUndVereinstrainingFront,
 			back: 'Back',
 		},
 		{
 			id: '2',
-			variant: 'click',
-			front: 'Click',
+			variant: 'hover',
+			front: einzeltrainingFront,
 			back: 'Back',
 		},
 		{
 			id: '3',
-			variant: 'focus',
+			variant: 'hover',
 			front: 'Focus',
 			back: 'Back',
 		},
@@ -47,18 +51,16 @@ const Service: FC<IService> = ({ idName }) => {
 				<h1 className="px-4 text-xl font-medium">Unser Service</h1>
 				<h2 className="pt-4 pb-6 sm:pb-10 text-5xl font-semibold md:w-[600px]">Wir bieten Ihnen zahlreiche Services an</h2>
 			</div>
-			<section className="grid grid-cols-2 gap-2 p-4 sm:grid-cols-3">
-				<ServiceField header="Einzeltraining" icon={user} />
-				<ServiceField header="Gruppentraining" icon={users} />
-				<ServiceField header="Vereinslehrgänge" icon={chalkboardTeacher} />
-				<ServiceField header="Individuelle Trainingspläne" icon={dumbbell} />
-				<ServiceField header="Fitness- und Ernährungspläne" icon={food} />
-				{/* Den Punkt unter dem Kommentar habe ich raus genommen um auf eine gerade Anzahl zu kommen und da es eigentlich das selbe aussagt wie Vereinslehrgänge? oder nicht?  */}
+			<section className="grid grid-cols-2 gap-2 p-4 sm:grid-cols-8">
+				{/* <ServiceField header="Lehrgänge und Vereinstraining" icon={users} className="sm:col-span-3 sm:col-start-2" />
+				<ServiceField className="sm:col-span-3" header="Einzeltraining" icon={user} /> */}
+				<ServiceField className="sm:col-span-3 sm:col-start-2" header="Individuelle Trainingspläne" icon={tTSchläger} />
+				<ServiceField className="sm:col-span-3" header="Fitness- und Ernährungspläne" icon={food} />
 				{/* <ServiceField header="BesserTischtennis Lehrgänge" icon={chartLine} /> */}
-				<ServiceField header="Materialberatung" icon={tTSchläger} />
 				{cards.map((card) => (
 					<FlipCard key={card.id} card={card} />
 				))}
+				// TODO die restlichen 2 Service rausnehmen und die einzelnen cards auf das Grid anpassen
 			</section>
 		</div>
 	);

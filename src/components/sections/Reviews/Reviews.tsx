@@ -15,12 +15,13 @@ import ReviewCard from './ReviewCard';
 
 export interface IReviews {
 	idName: string;
-	name: string;
-	text: string;
-	punkte: number;
+	// name: string;
+	// text: string;
+	// punkte: number;
 }
 
-const Reviews: FC<IReviews> = ({ idName, name, text, punkte }) => {
+// const Reviews: FC<IReviews> = ({ idName, name, text, punkte }) => {
+const Reviews: FC<IReviews> = ({ idName }) => {
 	const { width } = useViewport();
 	const breakpoint = 700;
 	const reviewsRef = useNavigation(idName);
