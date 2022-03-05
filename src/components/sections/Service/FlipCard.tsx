@@ -5,9 +5,10 @@ import cn from 'classnames';
 
 export interface IFlipCard {
 	card: any;
+	className?: any;
 }
 
-const FlipCard: FC<IFlipCard> = ({ card }) => {
+const FlipCard: FC<IFlipCard> = ({ card, className }) => {
 	const [showBack, setShowBack] = useState(false);
 
 	const handleClick = () => {
@@ -31,9 +32,9 @@ const FlipCard: FC<IFlipCard> = ({ card }) => {
 	return (
 		<div
 			tabIndex={card.id}
-			className={cn('flip-card-outer', {
+			className={`${cn('flip-card-outer', {
 				'focus-trigger': card.variant === 'focus',
-			})}
+			})} ${className}`}
 			onClick={handleClick}
 			onFocus={handleFocus}
 			onBlur={handleBlur}
