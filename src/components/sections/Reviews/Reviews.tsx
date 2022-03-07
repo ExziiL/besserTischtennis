@@ -11,6 +11,9 @@ SwiperCore.use([Pagination, Navigation]);
 import { useViewport } from '../../../hooks/useViewport';
 import { useNavigation } from '../../../hooks/useNavigation';
 
+import Svg from '../../atoms/Svg/Svg';
+import arrowRight from '../../../css/icons/arrow-right.svg';
+
 import ReviewCard from './ReviewCard';
 
 export interface IReviews {
@@ -39,10 +42,14 @@ const Reviews: FC<IReviews> = ({ idName }) => {
 
 	const checkSlidesPerView = () => (width > breakpoint ? 2 : 1);
 
+	const handleClick = () => {
+		window.open('https://de.trustpilot.com/review/bessertischtennis.de');
+	};
+
 	return (
-		<div ref={reviewsRef} className="bg-[#F2F2F2] py-12 scroll-mt-6" id={idName}>
+		<div ref={reviewsRef} className="bg-[#F2F2F2] pt-12 scroll-mt-6" id={idName}>
 			<h1 className="pb-4 text-2xl font-semibold text-center md:pb-8 md:pt-10 sm:text-3xl ">Das sagen unsere Kunden über uns:</h1>
-			<div className="flex max-w-5xl m-auto">
+			<div className="flex max-w-5xl pb-10 m-auto">
 				<Swiper slidesPerView={checkSlidesPerView()} pagination={{ dynamicBullets: false }} navigation={{ prevEl: '.prev', nextEl: '.next' }}>
 					{/* <Swiper slidesPerView={checkSlidesPerView()}> */}
 					{reviews.map((review, index) => (
@@ -54,6 +61,12 @@ const Reviews: FC<IReviews> = ({ idName }) => {
 					<div className="prev">Prev</div>
 					<div className="next">Next</div>
 				</Swiper>
+			</div>
+			<div className="flex justify-end">
+				<div className="flex items-center px-4 pb-2 space-x-3 cursor-pointer hover:underline" onClick={handleClick}>
+					<div className="">weitere Reviews</div>
+					<Svg icon={arrowRight} width={17} className="" />
+				</div>
 			</div>
 		</div>
 	);
