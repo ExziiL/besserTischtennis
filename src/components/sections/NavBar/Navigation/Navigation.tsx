@@ -19,12 +19,16 @@ const Navigation: FC<INavigation> = () => {
 		window.open('http://shop-bessertischtennis.de');
 	};
 
+	const handleClickOnIcon = () => {
+		document.getElementById('heroSection')!.scrollIntoView({ behavior: 'smooth' });
+	};
+
 	return (
 		<FullPageWidthWrapper className="relative">
 			<nav className="flex items-center justify-center h-20 px-6 shadow-md">
 				<div className="w-[1280px] flex justify-between items-center xl:px-4">
 					<div className="h-20">
-						<Image src={logo} className="h-full py-2" />
+						<Image src={logo} className="h-full py-2 cursor-pointer" onClick={handleClickOnIcon} />
 					</div>
 					<ul className="flex items-center justify-end h-full pt-1 space-x-6 font-medium">
 						{navLinks.map(({ navLinkId, scrollToId }, index) => (
