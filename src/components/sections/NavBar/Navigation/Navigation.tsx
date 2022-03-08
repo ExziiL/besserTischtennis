@@ -23,7 +23,6 @@ const Navigation: FC<INavigation> = () => {
 		<FullPageWidthWrapper className="relative">
 			<nav className="flex items-center justify-center h-20 px-6 shadow-md">
 				<div className="w-[1280px] flex justify-between items-center xl:px-4">
-					{/* <h1 className="text-3xl">besserTischtennis</h1> */}
 					<div className="h-20">
 						<Image src={logo} className="h-full py-2" />
 					</div>

@@ -6,9 +6,10 @@ export interface INavLink {
 	scrollToId: string;
 	activeNavLinkId?: string;
 	setActiveNavLinkId?: any;
+	className?: string;
 }
 
-const NavLink: FC<INavLink> = ({ navLinkId, scrollToId }) => {
+const NavLink: FC<INavLink> = ({ navLinkId, scrollToId, className }) => {
 	// const { activeNavLinkId, setActiveNavLinkId } = useContext(NavContext);
 
 	const handleClick = () => {
@@ -18,7 +19,7 @@ const NavLink: FC<INavLink> = ({ navLinkId, scrollToId }) => {
 
 	return (
 		// <span id={navLinkId} className={activeNavLinkId === navLinkId ? 'activeClass' : ''} onClick={handleClick}>
-		<span id={navLinkId} onClick={handleClick}>
+		<span id={navLinkId} className={className} onClick={handleClick}>
 			{navLinkId}
 		</span>
 	);
