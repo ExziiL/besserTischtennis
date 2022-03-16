@@ -9,7 +9,7 @@ export interface ISvg {
 
 const Svg: FC<ISvg> = ({ icon, onClick, width, className }) => {
 	return (
-		<div className={className} style={{ width: `${width}px` }}>
+		<div className={className} style={{ width: `${width}rem` }}>
 			<img src={icon} alt="NavIcon" className={``} onClick={onClick} />
 		</div>
 	);

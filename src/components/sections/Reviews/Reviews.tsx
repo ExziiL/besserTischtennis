@@ -65,7 +65,7 @@ const Reviews: FC<IReviews> = ({ idName }) => {
 			<div className="flex justify-end">
 				<div className="flex items-center px-4 pb-2 space-x-3 cursor-pointer hover:underline" onClick={handleClick}>
 					<div className="">weitere Reviews</div>
-					<Svg icon={arrowRight} width={17} className="" />
+					<Svg icon={arrowRight} width={1.5} className="" />
 				</div>
 			</div>
 		</div>

@@ -37,7 +37,7 @@ const MobileNavigation: FC<IMobileNavigation> = () => {
 				) : null}
 			</div>
 			<div className="flex flex-row-reverse items-center w-full h-16 p-6 bg-white shadow-2xl">
-				<Svg icon={!isOpen ? hamburgerSVG : cross} width={25} onClick={() => setIsOpen(!isOpen)} />
+				<Svg icon={!isOpen ? hamburgerSVG : cross} width={2} onClick={() => setIsOpen(!isOpen)} />
 			</div>
 		</div>
 	);

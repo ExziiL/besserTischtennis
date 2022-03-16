@@ -7,10 +7,18 @@ import facebook from '../../../css/icons/facebook-brands.svg';
 import twitter from '../../../css/icons/twitter-brands.svg';
 import instagram from '../../../css/icons/instagram-brands.svg';
 import linkedin from '../../../css/icons/linkedin-brands.svg';
+import trustpilot from '../../../css/icons/trustpilot-svgrepo-com.svg';
 
 export interface IFooter {}
 
 const Footer: FC<IFooter> = () => {
+	const handleClickTrustPilot = () => {
+		window.open('https://de.trustpilot.com/review/bessertischtennis.de');
+	};
+	const handleClickInstagram = () => {
+		window.open('https://instagram.com/bessertischtennis/');
+	};
+
 	return (
 		// <FullPageWidthWrapper className="relative">
 		// <div className="w-screen text-white">
@@ -19,35 +27,34 @@ const Footer: FC<IFooter> = () => {
 			{/* ------------------  Linke Seite ------------------ */}
 			<div className="sm:flex sm:space-x-20 md:space-x-24 lg:space-x-40 justify-center bg-[#1E1B1B] py-12 px-8">
 				<div>
-					<div className="text-3xl">Besuch uns doch gerne auf Social Media</div>
-					<div className="pt-6">
+					<div className="text-2xl">Besuch uns doch gerne auf Social Media</div>
+					<div className="pt-2">
 						<ul className="flex space-x-3">
-							<li>
-								{/* Hier statt Facebook, Trustpilot einfügen */}
-								<Svg icon={facebook} width={20} className="stroke-white" />
+							<li onClick={handleClickInstagram} className="cursor-pointer" title="Instagram">
+								<Svg icon={instagram} width={2} />
 							</li>
-							<li>
-								<Svg icon={instagram} width={20} />
+							<li onClick={handleClickTrustPilot} className="cursor-pointer" title="TrustPilot">
+								<Svg icon={trustpilot} width={2} />
 							</li>
 						</ul>
 					</div>
 				</div>
 				{/* ------------------  Rechte Seite ------------------ */}
-				<div className="pt-12 space-y-4 sm:pt-0 ">
+				<div className="pt-12 space-y-4 text-sm sm:pt-0">
 					{/* ------------------ Tel. Nr. ------------------ */}
 					<div>
-						<div className="text-sm text-[#909090]">Tel. Nr.</div>
-						<div>123 456 789</div>
+						<div className="text-xs text-[#909090]">Tel. Nr.</div>
+						<div>0177 3093837</div>
 					</div>
 					{/* ------------------ Anschrift ------------------ */}
 					<div>
-						<div className="text-sm text-[#909090]">Adresse</div>
-						<div>012345 Stuttgart, Stuttgarterstr. 40</div>
+						<div className="text-xs text-[#909090]">Adresse</div>
+						<div>74354 Besigheim, Hermannstr. 13</div>
 					</div>
 					{/* ------------------ Trainingszeiten ------------------ */}
 					<div>
-						<div className="text-sm text-[#909090]">Unsere Trainingszeiten</div>
-						<div>12-14 Uhr</div>
+						<div className="text-xs text-[#909090]">E-Mail</div>
+						<div>info@bessertischtennis.de</div>
 					</div>
 				</div>
 				{/* ------------------  Unterseite ------------------ */}

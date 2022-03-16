@@ -20,7 +20,7 @@ const FAQModal: FC<IFAQModal> = ({ question, answer }) => {
 			<div className="flex items-center justify-between cursor-pointer select-none" onClick={toggleOpen}>
 				<h1 className="flex items-center mb-0 font-semibold leading-6 md:text-lg">{question}</h1>
 				<div className=" sm:w-12 min-w-[40px] min-h-[40px] sm:h-12 bg-[#ff6433] flex justify-center items-center sm:min-w-[48px] sm:min-h-[48px] ml-2">
-					<Svg icon={isOpen ? minus : plus} width={20} className="" />
+					<Svg icon={isOpen ? minus : plus} width={1.25} className="" />
 				</div>
 			</div>
 			{isOpen ? <p className="pt-2 text-sm text-gray-500 md:text-base pr-14">{answer}</p> : null}
