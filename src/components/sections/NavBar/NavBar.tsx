@@ -11,7 +11,7 @@ const NavBar: FC<INavBar> = () => {
 	const { width } = useViewport();
 	const breakpoint = 850;
 
-	return <nav className="">{width < breakpoint ? <MobileNavigation /> : <Navigation />}</nav>;
+	return width < breakpoint ? <MobileNavigation /> : <Navigation />;
 };
 
 export default NavBar;

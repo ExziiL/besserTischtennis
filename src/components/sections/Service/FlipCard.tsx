@@ -47,12 +47,12 @@ const FlipCard: FC<IFlipCard> = ({ card, className }) => {
 			>
 				<div className="card front">
 					<div className="card-body d-flex justify-content-center align-items-center">
-						<p className="card-text fs-1 fw-bold">{card.front}</p>
+						<div className="card-text fs-1 fw-bold">{card.front}</div>
 					</div>
 				</div>
 				<div className="card back">
 					<div className="card-body d-flex justify-content-center align-items-center">
-						<p className="card-text fs-1 fw-bold">{card.back}</p>
+						<div className="card-text fs-1 fw-bold">{card.back}</div>
 					</div>
 				</div>
 			</div>
