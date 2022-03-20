@@ -48,7 +48,7 @@ const Reviews: FC<IReviews> = ({ idName }) => {
 
 	return (
 		<div ref={reviewsRef} className="bg-[#F2F2F2] pt-12 scroll-mt-6" id={idName}>
-			<h1 className="pb-4 text-2xl font-semibold text-center md:pb-8 md:pt-10 sm:text-3xl ">Das sagen unsere Kunden über uns:</h1>
+			<h1 className="px-4 pb-4 text-2xl font-semibold text-center md:pb-8 md:pt-10 sm:text-3xl">Das sagen unsere Kunden über uns:</h1>
 			<div className="flex max-w-5xl pb-10 m-auto">
 				<Swiper slidesPerView={checkSlidesPerView()} pagination={{ dynamicBullets: false }} navigation={{ prevEl: '.prev', nextEl: '.next' }}>
 					{/* <Swiper slidesPerView={checkSlidesPerView()}> */}

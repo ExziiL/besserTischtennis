@@ -25,7 +25,7 @@ const Footer: FC<IFooter> = () => {
 		// oben drüber ist die FullPageWidthWrapper Version des Footers (mit dem w-screen)
 		<div className="text-white xl:shadow-2xl">
 			{/* ------------------  Linke Seite ------------------ */}
-			<div className="sm:flex sm:space-x-20 md:space-x-24 lg:space-x-40 justify-center bg-[#1E1B1B] py-12 px-8">
+			<div className="sm:flex sm:space-x-20 md:space-x-24 lg:space-x-40 justify-center bg-[#1E1B1B] py-12 px-4 md:px-8">
 				<div>
 					<div className="text-2xl">Besuch uns doch gerne auf Social Media</div>
 					<div className="pt-2">

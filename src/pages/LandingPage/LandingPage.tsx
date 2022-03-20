@@ -16,7 +16,7 @@ const LandingPage: FC<ILandingPage> = () => {
 			<AboutMe idName="aboutMeSection" />
 			<div className="xl:shadow-2xl">
 				<Service idName="servicesSection" />
-				<Erstgespräch idName="erstgesprächSection" />
+				<Erstgespräch idName="erstgespraechSection" />
 				<Reviews idName="reviewSection" />
 				<FAQ idName="faqSection" />
 			</div>

@@ -12,14 +12,14 @@ export interface IErstgesprächDesktop {
 }
 
 const ErstgesprächDesktop: FC<IErstgesprächDesktop> = ({ idName }) => {
-	const erstgesprächRef = useNavigation(idName);
+	const erstgespraechRef = useNavigation(idName);
 
 	const handleClick = () => {
 		window.open('https://calendly.com/bessertischtennis_erstgespraech');
 	};
 
 	return (
-		<div className="relative h-64 md:h-80 scroll-mt-28" id={idName} ref={erstgesprächRef}>
+		<div className="relative h-64 md:h-80 scroll-mt-28" id={idName} ref={erstgespraechRef}>
 			<div className="absolute flex flex-col justify-center bg-[#FF6433] h-full sm:w-[400px] lg:w-[500px] p-12 sm:ml-16 md:ml-36 lg:ml-64">
 				<h1 className="mb-8 text-3xl font-medium text-white ">Buche jetzt ein kostenloses Erstgespräch</h1>
 				<Button onClick={handleClick} name="Zum Erstgespräch" />

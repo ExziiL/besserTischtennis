@@ -24,9 +24,9 @@ const Navigation: FC<INavigation> = () => {
 	};
 
 	return (
-		<FullPageWidthWrapper className="relative">
-			<nav className="flex items-center justify-center h-20 px-6 shadow-md">
-				<div className="w-[1280px] flex justify-between items-center xl:px-4">
+		<FullPageWidthWrapper className="relative mt-20">
+			<nav className="fixed top-0 flex items-center justify-center w-screen h-20 px-4 shadow-md">
+				<div className="w-[1280px] flex justify-between items-center">
 					<div className="h-20">
 						<Image src={logo} className="h-full py-2 cursor-pointer" onClick={handleClickOnIcon} />
 					</div>
