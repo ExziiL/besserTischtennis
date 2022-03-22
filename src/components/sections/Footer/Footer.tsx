@@ -69,7 +69,8 @@ const Footer: FC<IFooter> = () => {
 					{/* ------------------ Anschrift ------------------ */}
 					<div>
 						<div className="text-xs text-[#909090]">Adresse</div>
-						<div>74354 Besigheim, Hermannstr. 13</div>
+						<div>Hermannstr. 13</div>
+						<div>74354 Besigheim</div>
 					</div>
 					{/* ------------------ Trainingszeiten ------------------ */}
 					<div>

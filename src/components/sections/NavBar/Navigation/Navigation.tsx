@@ -35,6 +35,18 @@ const Navigation: FC<INavigation> = () => {
 		}
 	};
 
+	const selectedNavLinks = () => {
+		if (location.pathname === '/') {
+			return navLinks.map(({ navLinkId, scrollToId }, index) => <NavLink key={index} navLinkId={navLinkId} scrollToId={scrollToId} />);
+		} else {
+			return (
+				<span className="" onClick={() => navigate('/')}>
+					<div>Startseite</div>
+				</span>
+			);
+		}
+	};
+
 	return (
 		<FullPageWidthWrapper className="relative mt-20">
 			<nav className="fixed top-0 flex items-center justify-center w-screen h-20 px-4 shadow-md">
@@ -42,11 +54,7 @@ const Navigation: FC<INavigation> = () => {
 					<div className="h-20">
 						<Image src={logo} className="h-full py-2 cursor-pointer" onClick={handleClickOnIcon} />
 					</div>
-					<ul className="flex items-center justify-end h-full pt-1 space-x-6 font-medium">
-						{navLinks.map(({ navLinkId, scrollToId }, index) => (
-							<NavLink key={index} navLinkId={navLinkId} scrollToId={scrollToId} />
-						))}
-					</ul>
+					<ul className="flex items-center justify-end h-full pt-1 space-x-6 font-medium">{selectedNavLinks()}</ul>
 					<div>
 						<ShopButton name="Zum Shop" className="" onClick={handleClick} />
 					</div>

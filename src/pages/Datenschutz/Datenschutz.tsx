@@ -3,7 +3,7 @@ import React from 'react';
 const Datenschutz = () => {
 	return (
 		<div className="pt-4 pb-24 m-4 prose">
-			<h1>Datenschutzerklärung</h1>
+			<h1 className="text-3xl">Datenschutzerklärung</h1>
 			<h2>1) Information über die Erhebung personenbezogener Daten und Kontaktdaten des Verantwortlichen</h2>
 			<p className="leading-5">
 				1.1 Wir freuen uns, dass Sie unsere Website besuchen und bedanken uns für Ihr Interesse. Im Folgenden informieren wir Sie über den Umgang mit Ihren personenbezogenen Daten bei der Nutzung unserer Website. Personenbezogene Daten sind hierbei alle Daten, mit denen Sie persönlich identifiziert
@@ -148,7 +148,7 @@ const Datenschutz = () => {
 				DSGVO auf Basis des berechtigten Interesses von PayPal an der Feststellung Ihrer Zahlungsfähigkeit an Auskunfteien weitergegeben. Das Ergebnis der Bonitätsprüfung in Bezug auf die statistische Zahlungsausfallwahrscheinlichkeit verwendet PayPal zum Zweck der Entscheidung über die
 				Bereitstellung der jeweiligen Zahlungsmethode. Die Bonitätsauskunft kann Wahrscheinlichkeitswerte enthalten (sog. Score-Werte). Soweit Score-Werte in das Ergebnis der Bonitätsauskunft einfließen, haben sie ihre Grundlage in einem wissenschaftlich anerkannten mathematisch-statistischen
 				Verfahren. In die Berechnung der Score-Werte fließen unter anderem, aber nicht ausschließlich, Anschriftendaten ein. Weitere datenschutzrechtliche Informationen, unter anderem zu den verwendeten Auskunfteien, entnehmen Sie bitte der Datenschutzerklärung von PayPal:
-				https://www.paypal.com/de/webapps/mpp/ua/privacy-full
+				<p className="text-sm">https://www.paypal.com/de/webapps/mpp/ua/privacy-full</p>
 			</p>
 			<p className="leading-5">Sie können dieser Verarbeitung Ihrer Daten jederzeit durch eine Nachricht an PayPal widersprechen. Jedoch bleibt PayPal ggf. weiterhin berechtigt, Ihre personenbezogenen Daten zu verarbeiten, sofern dies zur vertragsgemäßen Zahlungsabwicklung erforderlich ist.</p>
 
