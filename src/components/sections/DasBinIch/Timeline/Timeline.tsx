@@ -15,7 +15,7 @@ const Timeline: FC<ITimeline> = ({ className }) => {
 				<TimelineYear year={2019} headline="Erste Trainerstelle in einem anderen Verein" paragraph="Aufgrund meines Studiums suchte ich mir einen weiteren Verein, den ich unterstützen durfte" />
 				<TimelineYear year={2020} headline="Erster Lehrgang im Aktiven-Bereich" paragraph="Aufgrund des positiven Feedbacks war ich motiviert weiter zu machen" />
 				<TimelineYear year={2020} headline="Gründung von BesserTischtennis" paragraph="Gemeinsam mit meinem Bruder gründete ich BesserTischtennis, um noch mehr Spieler zu unterstützen" />
-				<TimelineYear year={2020} headline="BesserTischtennis Shop" paragraph="2022 eröffneten wir unseren eigenen Online-Shop" isLast={true} />
+				<TimelineYear year={2022} headline="BesserTischtennis Shop" paragraph="2022 eröffneten wir unseren eigenen Online-Shop" isLast={true} />
 			</div>
 		</div>
 	);

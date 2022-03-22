@@ -11,7 +11,7 @@ const ServiceFieldBack: FC<IServiceFieldBack> = ({ className }) => {
 		<div className={`${className} flex flex-col p-2 h-48 space-y-3 bg-white shadow-md sm:h-60`}>
 			<h1 className="text-sm font-medium leading-4">Das Beste, um Impulse für dein wöchentliches Training zu erhalten</h1>
 			<div>
-				<ul className="text-xs">
+				<ul className="text-xs leading-6">
 					<li>Mehrere intensive Trainingseinheiten</li>
 					<li>Individuelles Balleimertraining</li>
 					<li>Workshops über ganzheitliche Themen im Tennis</li>
