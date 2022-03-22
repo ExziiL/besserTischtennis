@@ -19,13 +19,19 @@ const MobileNavigation: FC<IMobileNavigation> = () => {
 	let menu;
 	let menuMask;
 
+	const closeNavBar = () => {
+		// setTimeout(() => {
+		setIsOpen(false);
+		// }, 150);
+	};
+
 	if (isOpen) {
 		menu = (
 			<div className="fixed top-0 z-50 flex flex-col justify-center w-4/5 h-full bg-white shadow-md sm:w-3/5">
 				<div className="">
 					<div className="flex flex-col px-8 py-4 text-3xl leading-loose divide-y">
 						{navLinks.map(({ navLinkId, scrollToId }, index) => (
-							<NavLink key={index} navLinkId={navLinkId} scrollToId={scrollToId} />
+							<NavLink key={index} navLinkId={navLinkId} scrollToId={scrollToId} className="cursor-pointer" onClickProp={closeNavBar} />
 						))}
 					</div>
 				</div>

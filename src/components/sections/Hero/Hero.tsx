@@ -13,6 +13,10 @@ export interface IHero {
 const Hero: FC<IHero> = ({ idName }) => {
 	const heroRef = useNavigation(idName);
 
+	const handleClick = () => {
+		window.open('https://calendly.com/bessertischtennis_erstgespraech');
+	};
+
 	return (
 		<div ref={heroRef} className="p-4 xl:px-0 sm:mx-0 sm:pt-16 md:flex md:items-center scroll-mt-20" id={idName}>
 			<div className="sm:pr-12 md:w-1/2">
@@ -23,7 +27,7 @@ const Hero: FC<IHero> = ({ idName }) => {
 				<div className="pt-4 lg:pt-10">Unser Ziel ist es ehrgeizigen und ambitionierten Spielern eine Plattform zu bieten, die sie optimal dabei unterstützt, erfolgreicher im Tischtennis zu werden.</div>
 				<div className="py-8 md:pt-8 md:pb-0 lg:pt-14">
 					{/* //! Das ist der disabled Button */}
-					{/* <SecondaryButton name="Mehr Erfahren" className="text-sm font-bold" /> */}
+					<SecondaryButton name="Kostenfreies Erstgespräch vereinbaren" onClick={handleClick} className="text-sm font-bold" />
 				</div>
 			</div>
 			<div className="md:w-1/2">

@@ -7,9 +7,10 @@ export interface INavLink {
 	activeNavLinkId?: string;
 	setActiveNavLinkId?: any;
 	className?: string;
+	onClickProp?: any;
 }
 
-const NavLink: FC<INavLink> = ({ navLinkId, scrollToId, className }) => {
+const NavLink: FC<INavLink> = ({ navLinkId, scrollToId, className, onClickProp }) => {
 	// const { activeNavLinkId, setActiveNavLinkId } = useContext(NavContext);
 
 	const handleClick = () => {
@@ -20,7 +21,7 @@ const NavLink: FC<INavLink> = ({ navLinkId, scrollToId, className }) => {
 	return (
 		// <span id={navLinkId} className={activeNavLinkId === navLinkId ? 'activeClass' : ''} onClick={handleClick}>
 		<span id={navLinkId} className={className} onClick={handleClick}>
-			{navLinkId}
+			<div onClick={onClickProp}>{navLinkId}</div>
 		</span>
 	);
 };

@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router';
 import NavLink from './NavLink';
 import { navLinks } from './navLinks';
 import './Navigation.scss';
@@ -19,8 +20,19 @@ const Navigation: FC<INavigation> = () => {
 		window.open('http://shop-bessertischtennis.de');
 	};
 
+	const location = useLocation();
+	let navigate = useNavigate();
 	const handleClickOnIcon = () => {
-		document.getElementById('heroSection')!.scrollIntoView({ behavior: 'smooth' });
+		if (location.pathname !== '/') {
+			navigate('/');
+			window.scrollTo({
+				top: 0,
+				left: 0,
+				// behavior: 'smooth',
+			});
+		} else {
+			document.getElementById('heroSection')!.scrollIntoView({ behavior: 'smooth' });
+		}
 	};
 
 	return (

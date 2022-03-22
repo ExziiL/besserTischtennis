@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { useNavigate } from 'react-router';
 
 import FullPageWidthWrapper from '../../utils/FullPageWidthWrapper';
 
@@ -17,6 +18,25 @@ const Footer: FC<IFooter> = () => {
 	};
 	const handleClickInstagram = () => {
 		window.open('https://instagram.com/bessertischtennis/');
+	};
+	let navigate = useNavigate();
+
+	function handleClickDatenschutz() {
+		navigate('/datenschutz');
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth',
+		});
+	}
+
+	const handleClickImpressum = () => {
+		navigate('/impressum');
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth',
+		});
 	};
 
 	return (
@@ -60,12 +80,13 @@ const Footer: FC<IFooter> = () => {
 				{/* ------------------  Unterseite ------------------ */}
 			</div>
 			<div className="bg-[#181313] py-6 px-8 text-xs ">
-				<ul className="flex justify-between items-center m-auto text-[#ffffffb9] max-w-sm">
-					<li>Home</li>
-					<li>About us</li>
-					<li>Services</li>
-					<li>Blog</li>
-					<li>Contact us</li>
+				<ul className="flex justify-center space-x-8 items-center m-auto text-[#ffffffb9] max-w-sm">
+					<li className="cursor-pointer hover:underline" onClick={handleClickImpressum}>
+						Impressum
+					</li>
+					<li className="cursor-pointer hover:underline" onClick={handleClickDatenschutz}>
+						Datenschutz
+					</li>
 				</ul>
 			</div>
 		</div>
