@@ -1,33 +1,26 @@
 const questions = [
 	{
 		question: 'Was kostet ein Beratungsgespräch?',
-		answer: 'Gar nichts! Wenn du dir ein kostenloses Erstgespräch gebucht hast, ruft dich ein Trainer unseres Teams an und bespricht mit dir in Ruhe deine Situation und klärt offene Fragen',
+		answer: 'Gar nichts! Wenn du ein kostenloses Erstgespräch gebucht hast ruft dich ein Trainer unseres Teams an und bespricht mit dir in Ruhe deine Situation. Gemeinsam klären wir deinen Bedarf und unterbreiten dir ein individuelles Angebot.',
 	},
 	{
-		question: 'Wie sieht ein Workshop für Vereine konkret aus?',
-		answer: 'Das ist abhängig von euren Vorstellungen. In einem gemeinsamen Gespräch besprechen eure Wünsche und Anregungen und gestalten infolgedessen euren Lehrgang! Unter dem Reiter „Vereins-Lehrgänge“ findest du erste Ideen und Inspirationen, was wir in den Workshop integrieren können.',
+		question: 'Bin ich durch das Beratungsgespräch an Verpflichtungen gebunden?',
+		answer: 'Nein, das Gespräch ist kostenlos und komplett unverbindlich.',
 	},
 	{
-		question: 'Ist ein Einzeltraining auch an meinem Standort möglich?',
+		question: 'Was kosten die verschiedenen Angebote?/Sind die angegebenen Kosten als Fixpreise zu verstehen?',
 		answer:
-			'Leider ist es uns aufgrund unserer Unternehmensgröße noch nicht möglich an jedem Standort in Deutschland Einzeltraining anzubieten. Sollte der gewünschte Standort nicht möglich sein, stehen verschiedene Alternativen, wie z.B. ein regelmäßiges Video-Coaching oder ein BesserTischtennis-Lehrgang zur Verfügung. In einem kostenlosen Erstgespräch können wir mit dir gemeinsam klären, welche Alternative für dich am besten passt.',
+			'Unsere Angebote werden individuell an deinen Bedarf und deine Situation angepasst. Daher geben wir keine pauschalen Preise an. Die Kosten für unsere Unterstützung sind abhängig von deinem gewünschten Umfang und werden dir von einem unserer Trainer nach einem kostenlosen Erstgespräch berechnet.',
 	},
 	{
-		question: 'Sind die Trainings- und Ernährungspläne auf meine Wünsche und Bedürfnisse angepasst?',
-		answer: 'Absolut! Wenn du dich für einen Trainingsplan von uns entscheidest, erklärst du einen unserer Trainer in einem gemeinsamen Telefonat deine Situation, Rahmenbedingungen und Wünsche, woraufhin du deinen individuellen Plan erhätlst.',
-	},
-	{
-		question: 'Ist bei einem BesserTischtennis-Lehrgang die Übernachtung inklusive?',
+		question: 'Wie ist das Erstgespräch aufgebaut?',
 		answer:
-			'Eine Übernachtung ist in der Teilnahmegebühr nicht enthalten, da wir verschiedene Teilnehmer aus der Region, aber auch aus anderen Teilen Deutschlands betreuen. Deswegen ist eine Pauschalisierung leider nicht möglich. Es besteht trotzdem die Möglichkeit über uns eine Übernachtungsmöglichkeit zu buchen. Diese organisieren wir dir am Standort des Lehrgangs und berechnen den Aufpreis zzgl. der Teilnahmegebühr. Dafür sagst du uns bei deiner Buchung einfach rechtzeitig Bescheid, damit wir die Übernachtung für dich organisieren können.',
+			'Nachdem du dir in unserem System einen Termin gebucht hast, meldet sich einer unserer Trainer per Telefon an deinem gewählten Zeitpunkt. Nach einer kurzen Erläuterung deiner Ziele und deiner Situation besprechen wir, wobei und in welchem Format wir dir am besten helfen können. Gemessen am Leistungsumfang wird dir der Trainer die Kosten für die Zusammenarbeit unterbreiten. Dieses Angebot ist vollkommen unverbindlich.',
 	},
 	{
-		question: 'Ist bei den BesserTischtennis-Lehrgang das Mittagessen inklusive?',
-		answer: 'Du erhältst auf unseren Trainingstagen jeweils ein Frühstück, ein Mittagessen, sowie Snacks und Getränke über den gesamten Tag. ',
-	},
-	{
-		question: 'Was kostet eine Materialberatung?',
-		answer: 'Eine Materialberatung kostet bei uns nichts und kann jederzeit über die kostenlosen Erstgespräche gebucht werden.',
+		question: 'Wer betreut mich?',
+		answer:
+			'Wir arbeiten mit freiberuflichen und angestellten Trainern zusammen. Sie alle verfügen über Trainerlizenzen und jahrelanger Erfahrung im Tischtennis. Dein Trainer wird dir abhängig von den verfügbaren Kapazitäten und dem vereinbarten Leistungsumfang ausgewählt. Bei Bedarf können wir unter Rücksprache auch einen konkreten Trainerwunsch berücksichtigen. Darauf kannst du direkt im Buchungssystem oder im Erstgespräch hinweisen.',
 	},
 ];
 

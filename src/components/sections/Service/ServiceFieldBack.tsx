@@ -15,7 +15,7 @@ const ServiceFieldBack: FC<IServiceFieldBack> = ({ className, title, listItems }
 
 	return (
 		<div className={`${className} flex flex-col p-2 sm:p-4 h-48 space-y-1 sm:space-y-3 bg-white shadow-md sm:h-60`}>
-			<h1 className="text-sm font-semibold leading-4">{title}</h1>
+			<h1 className="text-sm font-bold leading-4">{title}</h1>
 			<div>
 				<ul className="space-y-1 text-xs sm:space-y-3">
 					{listItems.map((item, index) => (

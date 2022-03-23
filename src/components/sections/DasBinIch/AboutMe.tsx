@@ -26,7 +26,7 @@ const AboutMe: FC<IAboutMe> = ({ idName }) => {
 					<div className="w-60">
 						<Image src={GioeleBild3} className="rounded-2xl" />
 						<p className="pt-2 text-xl font-semibold">Gioele Vulcano</p>
-						<p className="font-semibold text-gray-500">Co-Gründer BesserTischtennis</p>
+						<p className="font-semibold text-gray-500">Co-Gründer und Head-Coach von BesserTischtennis</p>
 					</div>
 					<p className="font-semibold text-gray-500 pt-14 md:pr-8 md:text-left">
 						Wir sind ein junges Team, dass sich zum Ziel gesetzt hat die Begeisterung für unser Hobby Tischtennis zu teilen und jedem eine professionelle Unterstützung zu bieten, der auch seine Leidenschaft in diesem Sport gefunden hat. Seit man uns in der Kindheit das erste Mal einen Schläger in

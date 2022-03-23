@@ -83,8 +83,8 @@ const Service: FC<IService> = ({ idName }) => {
 	return (
 		<div ref={serviceRef} className={`${css.root} bg-[#F2F2F2] py-12 lg:py-20 px-0 md:px-10 lg:px-24 xl:px-36 scroll-mt-6`} id={idName}>
 			<div className="flex flex-col items-center justify-center w-full px-4 text-center">
-				<h1 className="px-4 text-xl font-medium">Unser Service</h1>
-				<h2 className="pt-4 pb-6 sm:pb-10 text-5xl font-semibold md:w-[600px]">Wir bieten Ihnen zahlreiche Services an</h2>
+				<h1 className="px-4 text-xl font-medium">Unsere Angebote</h1>
+				<h2 className="pt-4 pb-6 sm:pb-10 text-5xl font-semibold md:w-[600px]">Wir bieten dir folgende Angebote an</h2>
 			</div>
 			<section className={`${css.serviceCard} grid grid-cols-1 gap-2 p-4 md:grid-cols-8`}>
 				<FlipCard key={cards[0].id} card={cards[0]} className="md:col-span-3 md:col-start-2" />
