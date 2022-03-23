@@ -26,7 +26,6 @@ const Hero: FC<IHero> = ({ idName }) => {
 				</div>
 				<div className="pt-4 lg:pt-10">Unser Ziel ist es ehrgeizigen und ambitionierten Spielern eine Plattform zu bieten, die sie optimal dabei unterstützt, erfolgreicher im Tischtennis zu werden.</div>
 				<div className="py-8 md:pt-8 md:pb-0 lg:pt-14">
-					{/* //! Das ist der disabled Button */}
 					<SecondaryButton name="Kostenfreies Erstgespräch vereinbaren" onClick={handleClick} className="text-sm font-bold" />
 				</div>
 			</div>

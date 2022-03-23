@@ -4,7 +4,7 @@ import Timeline from './Timeline/Timeline';
 import Button from '../../atoms/Button/PrimaryButton';
 import Image from '../../atoms/Image/Image';
 import GioeleBild from '../../../css/pictures/Gioele_Bild.jpeg';
-import GioeleBild2 from '../../../css/pictures/Gioele_Bild_2.jpg';
+import GioeleBild3 from '../../../css/pictures/Gioele_Bild_3.jpg';
 
 import { useNavigation } from '../../../hooks/useNavigation';
 
@@ -18,13 +18,13 @@ const AboutMe: FC<IAboutMe> = ({ idName }) => {
 	return (
 		<section ref={aboutMeRef} className="p-4 mt-12 mb-12 xl:px-0 md:mt-40 md:mb-20 sm:mx-0 scroll-mt-20" id={idName}>
 			<h2 className="mb-8 text-4xl font-semibold md:mb-16 md:text-5xl">Das bin ich</h2>
-			<div className="flex flex-col items-center md:items-start md:justify-between md:flex-row">
+			<div className="flex flex-col md:items-start md:justify-between md:flex-row">
 				<div className="flex flex-col max-w-md pb-12 md:items-start md:pb-4 md:w-1/2 ">
 					{/* <div className="pb-4 text-4xl font-semibold md:text-5xl">
 						<h1>Gioele Vulcano</h1>
 					</div> */}
 					<div className="w-60">
-						<Image src={GioeleBild2} className="rounded-2xl" />
+						<Image src={GioeleBild3} className="rounded-2xl" />
 						<p className="pt-2 text-xl font-semibold">Gioele Vulcano</p>
 						<p className="font-semibold text-gray-500">Co-Gründer BesserTischtennis</p>
 					</div>

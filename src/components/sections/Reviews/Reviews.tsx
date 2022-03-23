@@ -53,7 +53,7 @@ const Reviews: FC<IReviews> = ({ idName }) => {
 				<Swiper slidesPerView={checkSlidesPerView()} pagination={{ dynamicBullets: false }} navigation={{ prevEl: '.prev', nextEl: '.next' }}>
 					{/* <Swiper slidesPerView={checkSlidesPerView()}> */}
 					{reviews.map((review, index) => (
-						<SwiperSlide>
+						<SwiperSlide key={index}>
 							<ReviewCard name={review.name} text={review.text} punkte={review.punkte} />
 						</SwiperSlide>
 					))}

@@ -1,24 +1,31 @@
 import React, { FC } from 'react';
+import { useViewport } from '../../../hooks/useViewport';
 
 import Svg from '../../atoms/Svg/Svg';
 
 export interface IServiceFieldBack {
 	className?: any;
+	title: any;
+	listItems: any;
 }
 
-const ServiceFieldBack: FC<IServiceFieldBack> = ({ className }) => {
+const ServiceFieldBack: FC<IServiceFieldBack> = ({ className, title, listItems }) => {
+	const { width } = useViewport();
+	const breakpoint = 640;
+
 	return (
-		<div className={`${className} flex flex-col p-2 h-48 space-y-3 bg-white shadow-md sm:h-60`}>
-			<h1 className="text-sm font-medium leading-4">Das Beste, um Impulse für dein wöchentliches Training zu erhalten</h1>
+		<div className={`${className} flex flex-col p-2 sm:p-4 h-48 space-y-1 sm:space-y-3 bg-white shadow-md sm:h-60`}>
+			<h1 className="text-sm font-semibold leading-4">{title}</h1>
 			<div>
-				<ul className="text-xs leading-6">
-					<li>Mehrere intensive Trainingseinheiten</li>
-					<li>Individuelles Balleimertraining</li>
-					<li>Workshops über ganzheitliche Themen im Tennis</li>
-					<li>Inklusive Mittagessen, Snachs und Getränke</li>
-					<li>Für Vereine: Exklusive Lehrgänge nach Euren Wünschen</li>
+				<ul className="space-y-1 text-xs sm:space-y-3">
+					{listItems.map((item, index) => (
+						<li className="" key={index}>
+							{'>'} {item}
+						</li>
+					))}
 				</ul>
 			</div>
+			<p className="absolute self-center text-xs text-black bottom-4 hover:underline">zurück</p>
 		</div>
 	);
 };

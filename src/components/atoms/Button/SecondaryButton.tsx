@@ -13,7 +13,7 @@ const SecondaryButton: FC<SecondaryButton> = ({ name, disabled, onClick, classNa
 	return (
 		<div className={`${className}`} ref={ref} id={id}>
 			{/* <button className={`px-8 py-3 bg-[#0433df] text-white rounded-lg hover:bg-[#0429b1]`} disabled={disabled} type="button"> */}
-			<button onClick={onClick} className={`px-8 py-3 bg-[#FF6433] text-white rounded-lg hover:bg-[#f36235]`} disabled={disabled} type="button">
+			<button onClick={onClick} className={`px-8 py-3 bg-[#FF6433] text-white rounded-lg hover:bg-[#f15829]`} disabled={disabled} type="button">
 				{/* <button className={`px-8 py-3 bg-[#38b6ff] text-white rounded-xl ${className}`} disabled={disabled} type="button"> */}
 				{name}
 			</button>
