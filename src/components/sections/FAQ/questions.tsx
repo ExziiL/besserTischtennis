@@ -8,7 +8,7 @@ const questions = [
 		answer: 'Nein, das Gespräch ist kostenlos und komplett unverbindlich.',
 	},
 	{
-		question: 'Was kosten die verschiedenen Angebote?/Sind die angegebenen Kosten als Fixpreise zu verstehen?',
+		question: 'Was kosten die verschiedenen Angebote?',
 		answer:
 			'Unsere Angebote werden individuell an deinen Bedarf und deine Situation angepasst. Daher geben wir keine pauschalen Preise an. Die Kosten für unsere Unterstützung sind abhängig von deinem gewünschten Umfang und werden dir von einem unserer Trainer nach einem kostenlosen Erstgespräch berechnet.',
 	},

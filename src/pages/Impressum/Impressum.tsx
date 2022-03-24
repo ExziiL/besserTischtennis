@@ -2,7 +2,7 @@ import React from 'react';
 
 const Impressum = () => {
 	return (
-		<div className="pt-4 pb-24 prose">
+		<div className="p-4 pb-24 prose">
 			<h1 className="">Impressum</h1>
 			<div>Angelo und Gioele Vulcano GbR</div>
 			<div>Hermannstr.13</div>
