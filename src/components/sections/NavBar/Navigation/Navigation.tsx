@@ -9,6 +9,7 @@ import Image from '../../../atoms/Image/Image';
 import logo from '../../../../css/pictures/LogoNeu.jpg';
 
 import ShopButton from '../../../atoms/Button/ShopButton';
+import Announcementbanner from './Announcementbanner';
 
 export interface INavigation {
 	navLinkId?: string;
@@ -46,7 +47,7 @@ const Navigation: FC<INavigation> = () => {
 			);
 		}
 	};
-
+	// ! Announcementbanner stickt nicht an Header
 	return (
 		<FullPageWidthWrapper className="relative mt-20">
 			<nav className="fixed top-0 flex items-center justify-center w-screen h-20 px-4 shadow-md">
@@ -60,6 +61,7 @@ const Navigation: FC<INavigation> = () => {
 					</div>
 				</div>
 			</nav>
+			<Announcementbanner />
 		</FullPageWidthWrapper>
 	);
 };

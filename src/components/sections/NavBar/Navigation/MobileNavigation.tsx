@@ -16,6 +16,7 @@ import NavLink from './NavLink';
 import { navLinks } from './navLinks';
 import './Navigation.scss';
 import css from './MobileNavigation.module.scss';
+import Announcementbanner from './Announcementbanner';
 
 export interface IMobileNavigation {
 	navLinkId?: string;
@@ -112,6 +113,7 @@ const MobileNavigation: FC<IMobileNavigation> = () => {
 				{menuMask}
 				{menu}
 			</div>
+			<Announcementbanner />
 		</div>
 	);
 };

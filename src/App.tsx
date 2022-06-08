@@ -22,7 +22,6 @@ function App() {
 						<Route path="/datenschutz" element={<Datenschutz />} />
 						<Route path="/impressum" element={<Impressum />} />
 					</Routes>
-					<Footer />
 				</NavProvider>
 			</Router>
 		</div>

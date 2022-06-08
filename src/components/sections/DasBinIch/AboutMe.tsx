@@ -16,8 +16,8 @@ const AboutMe: FC<IAboutMe> = ({ idName }) => {
 	const aboutMeRef = useNavigation(idName);
 
 	return (
-		<section ref={aboutMeRef} className="p-4 mt-12 mb-12 xl:px-0 md:mt-40 md:mb-20 sm:mx-0 scroll-mt-20" id={idName}>
-			<h2 className="mb-8 text-4xl font-semibold text-center md:mb-16 md:text-5xl">Das sind wir</h2>
+		<section ref={aboutMeRef} className="p-4 mt-8 mb-12 xl:px-0 md:mb-20 sm:mx-0 scroll-mt-20" id={idName}>
+			<h2 className="mb-8 text-4xl font-semibold md:text-center md:mb-16 md:text-5xl">Das sind wir</h2>
 			<div className="flex flex-col md:items-start md:justify-between md:flex-row">
 				<div className="flex flex-col max-w-md pb-12 md:items-start md:pb-4 md:w-1/2 ">
 					{/* <div className="pb-4 text-4xl font-semibold md:text-5xl">
