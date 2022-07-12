@@ -3,6 +3,8 @@ import React, { FC, useState } from 'react';
 import Navigation from './Navigation/Navigation';
 import MobileNavigation from './Navigation/MobileNavigation';
 
+import Announcementbanner from './Navigation/Announcementbanner';
+
 import { useViewport } from '../../../hooks/useViewport';
 
 export interface INavBar {}

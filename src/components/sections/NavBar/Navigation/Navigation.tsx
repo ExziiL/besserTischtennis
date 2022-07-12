@@ -49,7 +49,7 @@ const Navigation: FC<INavigation> = () => {
 	};
 	// ! Announcementbanner stickt nicht an Header
 	return (
-		<FullPageWidthWrapper className="relative mt-20">
+		<FullPageWidthWrapper className="fixed z-30">
 			<nav className="fixed top-0 flex items-center justify-center w-screen h-20 px-4 shadow-md">
 				<div className="w-[1280px] flex justify-between items-center">
 					<div className="h-20">
