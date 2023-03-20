@@ -1,4 +1,5 @@
 export const navLinks = [
+	{ navLinkId: 'Produkte', scrollToId: 'productShowcase' },
 	{ navLinkId: 'Über uns', scrollToId: 'aboutMeSection' },
 	{ navLinkId: 'Angebote', scrollToId: 'servicesSection' },
 	{ navLinkId: 'Erstgespräch', scrollToId: 'erstgespraechSection' },
