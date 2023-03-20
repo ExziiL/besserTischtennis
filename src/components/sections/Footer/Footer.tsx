@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router';
 
 import FullPageWidthWrapper from '../../utils/FullPageWidthWrapper';
 
-import Svg from '../../atoms/Svg/Svg';
 import facebook from '../../../css/icons/facebook-brands.svg';
-import twitter from '../../../css/icons/twitter-brands.svg';
 import instagram from '../../../css/icons/instagram-brands.svg';
 import linkedin from '../../../css/icons/linkedin-brands.svg';
 import trustpilot from '../../../css/icons/trustpilot-svgrepo-com.svg';
+import twitter from '../../../css/icons/twitter-brands.svg';
+import Svg from '../../atoms/Svg/Svg';
 
 export interface IFooter {}
 
@@ -50,11 +50,25 @@ const Footer: FC<IFooter> = () => {
 					<div className="text-2xl">Besuch uns doch gerne auf Social Media</div>
 					<div className="pt-2">
 						<ul className="flex space-x-3">
-							<li onClick={handleClickInstagram} className="cursor-pointer" title="Instagram">
-								<Svg icon={instagram} width={2} />
+							<li
+								onClick={handleClickInstagram}
+								className="cursor-pointer"
+								title="Instagram"
+							>
+								<Svg
+									icon={instagram}
+									width={2}
+								/>
 							</li>
-							<li onClick={handleClickTrustPilot} className="cursor-pointer" title="TrustPilot">
-								<Svg icon={trustpilot} width={2} />
+							<li
+								onClick={handleClickTrustPilot}
+								className="cursor-pointer"
+								title="TrustPilot"
+							>
+								<Svg
+									icon={trustpilot}
+									width={2}
+								/>
 							</li>
 						</ul>
 					</div>
@@ -82,10 +96,16 @@ const Footer: FC<IFooter> = () => {
 			</div>
 			<div className="bg-[#181313] py-6 px-8 text-xs ">
 				<ul className="flex justify-center space-x-8 items-center m-auto text-[#ffffffb9] max-w-sm">
-					<li className="cursor-pointer hover:underline" onClick={handleClickImpressum}>
+					<li
+						className="cursor-pointer hover:underline"
+						onClick={handleClickImpressum}
+					>
 						Impressum
 					</li>
-					<li className="cursor-pointer hover:underline" onClick={handleClickDatenschutz}>
+					<li
+						className="cursor-pointer hover:underline"
+						onClick={handleClickDatenschutz}
+					>
 						Datenschutz
 					</li>
 				</ul>

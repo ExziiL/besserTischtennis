@@ -61,7 +61,7 @@ const Navigation: FC<INavigation> = () => {
 					</div>
 				</div>
 			</nav>
-			<Announcementbanner />
+			{/* <Announcementbanner /> */}
 		</FullPageWidthWrapper>
 	);
 };

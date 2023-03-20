@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 import { useNavigation } from '../../../../hooks/useNavigation';
-import flyer from '../../../../css/Einladung_BesserTischtennis_Wochenendcamp_13_und_14_August_2022.png';
+import flyer from '../../../../css/EinladungBesserTischtennis.png';
 
 export interface IAnnouncementbanner {}
 
