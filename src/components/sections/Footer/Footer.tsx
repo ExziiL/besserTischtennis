@@ -1,6 +1,10 @@
 import React, { FC } from 'react';
 import { useNavigate } from 'react-router';
 
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { FaTiktok } from 'react-icons/fa';
+import { SiTrustpilot } from 'react-icons/si';
+
 import FullPageWidthWrapper from '../../utils/FullPageWidthWrapper';
 
 import facebook from '../../../css/icons/facebook-brands.svg';
@@ -18,6 +22,9 @@ const Footer: FC<IFooter> = () => {
 	};
 	const handleClickInstagram = () => {
 		window.open('https://instagram.com/bessertischtennis/');
+	};
+	const handleClickTikTok = () => {
+		window.open('https://www.tiktok.com/@besser.tischtennis');
 	};
 	let navigate = useNavigate();
 
@@ -49,26 +56,29 @@ const Footer: FC<IFooter> = () => {
 				<div>
 					<div className="text-2xl">Besuch uns doch gerne auf Social Media</div>
 					<div className="pt-2">
-						<ul className="flex space-x-3">
+						<ul className="flex space-x-5">
 							<li
 								onClick={handleClickInstagram}
 								className="cursor-pointer"
 								title="Instagram"
 							>
-								<Svg
-									icon={instagram}
-									width={2}
-								/>
+								<div className="w-8">
+									<AiOutlineInstagram size="2.5rem" />
+								</div>
 							</li>
 							<li
 								onClick={handleClickTrustPilot}
 								className="cursor-pointer"
 								title="TrustPilot"
 							>
-								<Svg
-									icon={trustpilot}
-									width={2}
-								/>
+								<SiTrustpilot size="2.25rem" />
+							</li>
+							<li
+								onClick={handleClickTikTok}
+								className="cursor-pointer"
+								title="TikTok"
+							>
+								<FaTiktok size="2.25rem" />
 							</li>
 						</ul>
 					</div>
@@ -78,7 +88,7 @@ const Footer: FC<IFooter> = () => {
 					{/* ------------------ Tel. Nr. ------------------ */}
 					<div>
 						<div className="text-xs text-[#909090]">Tel. Nr.</div>
-						<div>0177 3093837</div>
+						<div>0152 59388544</div>
 					</div>
 					{/* ------------------ Anschrift ------------------ */}
 					<div>

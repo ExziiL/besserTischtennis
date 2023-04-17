@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 
-import Navigation from './Navigation/Navigation';
 import MobileNavigation from './Navigation/MobileNavigation';
+import Navigation from './Navigation/Navigation';
 
 import Announcementbanner from './Navigation/Announcementbanner';
 

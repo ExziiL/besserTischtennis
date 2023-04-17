@@ -3,6 +3,8 @@ import React, { FC } from 'react';
 import SecondaryButton from '../../atoms/Button/SecondaryButton';
 import Image from '../../atoms/Image/Image';
 
+import { FiExternalLink } from 'react-icons/fi';
+
 import tpms from '../../../css/pictures/Tischtennisplatte_mit_Schlaeger.jpeg';
 import { useNavigation } from '../../../hooks/useNavigation';
 
@@ -34,6 +36,7 @@ const Hero: FC<IHero> = ({ idName }) => {
 						name="Kostenfreies Erstgespräch vereinbaren"
 						onClick={handleClick}
 						className="text-sm font-bold"
+						icon={<FiExternalLink />}
 					/>
 				</div>
 			</div>

@@ -1,11 +1,13 @@
 import React, { FC } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 
 import { useNavigation } from '../../../hooks/useNavigation';
 import PrimaryButton from '../../atoms/Button/PrimaryButton';
 import css from './Announcement.module.scss';
 
-import flyer from '../../../css/EinladungBesserTischtennis.png';
+import { FiDownload } from 'react-icons/fi';
+
+import flyer from '../../../css/BesserTischtennis_Sommercamp_23_Einladung.pdf';
 
 export interface IAboutMe {
 	idName?: string;
@@ -33,6 +35,7 @@ const AboutMe: FC<IAboutMe> = ({ idName }) => {
 						<PrimaryButton
 							name="Flyer runterladen"
 							className="text-sm font-bold"
+							icon={<FiDownload />}
 						/>
 					</a>
 				</div>

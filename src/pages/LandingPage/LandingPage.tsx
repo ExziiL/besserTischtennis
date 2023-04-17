@@ -16,8 +16,8 @@ const LandingPage: FC<ILandingPage> = () => {
 	return (
 		<div className="">
 			<Hero idName="heroSection" />
-			{/* <Announcement idName="announcementSection" /> */}
-			<ProductShowcase idName="productShowcase" />
+			<Announcement idName="announcementSection" />
+			{/* <ProductShowcase idName="productShowcase" /> */}
 			<AboutMe idName="aboutMeSection" />
 			<div className="xl:shadow-2xl">
 				<Service idName="servicesSection" />
