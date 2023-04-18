@@ -8,6 +8,7 @@ import logo from '../../../../css/pictures/LogoNeu.jpg';
 import Image from '../../../atoms/Image/Image';
 import FullPageWidthWrapper from '../../../utils/FullPageWidthWrapper';
 
+import { FiDownload, FiExternalLink } from 'react-icons/fi';
 import ShopButton from '../../../atoms/Button/ShopButton';
 import Announcementbanner from './Announcementbanner';
 
@@ -74,6 +75,7 @@ const Navigation: FC<INavigation> = () => {
 							name="Zum Shop"
 							className=""
 							onClick={handleClick}
+							icon={<FiExternalLink />}
 						/>
 					</div>
 				</div>

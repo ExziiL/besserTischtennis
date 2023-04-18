@@ -23,7 +23,7 @@ const FAQModal: FC<IFAQModal> = ({ question, answer }) => {
 				onClick={toggleOpen}
 			>
 				<h1 className="flex items-center mb-0 font-semibold leading-6 md:text-lg">{question}</h1>
-				<div className=" sm:w-12 min-w-[40px] min-h-[40px] sm:h-12 bg-[#ff6433] flex justify-center items-center sm:min-w-[48px] sm:min-h-[48px] ml-2">
+				<div className=" sm:w-12 min-w-[40px] min-h-[40px] sm:h-12 bg-[#ff6433] hover:bg-[#f36235] rounded-sm flex justify-center items-center sm:min-w-[48px] sm:min-h-[48px] ml-2 shadow-[0_4px_14px_0_rgba(255,100,51,0.39)] hover:shadow-[0_5px_18px_0_rgba(255,100,51,0.45)]">
 					<div className="text-lg text-white">{isOpen ? <FaMinus /> : <FaPlus />}</div>
 				</div>
 			</div>

@@ -23,21 +23,6 @@ const Impressum = () => {
 				E-Mail: info@bessertischtennis.de
 			</p>
 
-			<h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
-			<p>
-				Berufsbezeichnung:
-				<br />
-				Trainer
-			</p>
-			<p>
-				Zust&auml;ndige Kammer:
-				<br />
-			</p>
-			<p>
-				Verliehen in:
-				<br />
-			</p>
-			<p>Es gelten folgende berufsrechtliche Regelungen:</p>
 			<h2>Redaktionell verantwortlich</h2>
 			<p>
 				Gioele Vulcano
