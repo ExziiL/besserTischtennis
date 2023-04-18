@@ -62,9 +62,7 @@ const Footer: FC<IFooter> = () => {
 								className="cursor-pointer"
 								title="Instagram"
 							>
-								<div className="w-8">
-									<AiOutlineInstagram size="2.5rem" />
-								</div>
+								<AiOutlineInstagram size="2.5rem" />
 							</li>
 							<li
 								onClick={handleClickTrustPilot}

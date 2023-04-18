@@ -146,7 +146,7 @@ const MobileNavigation: FC<IMobileNavigation> = () => {
 				{menuMask}
 				{menu}
 			</div>
-			{/* <Announcementbanner /> */}
+			<Announcementbanner />
 		</div>
 	);
 };

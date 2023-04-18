@@ -24,8 +24,8 @@ const AboutMe: FC<IAboutMe> = ({ idName }) => {
 		>
 			<div className="h-58 sm:h-[325px] flex flex-col justify-center my-6 lg:my-12 p-4 xl:px-0 items-center">
 				<div className={`${css.gradient} py-8 px-2 flex flex-col items-center shadow-2xl shadow-gray-300 justify-center w-full text-center bg-[#e7e7e7] rounded-2xl h-full`}>
-					<h1 className="text-3xl font-medium">BesserTischtennis Wochenend-Camp</h1>
-					<h3 className="mt-2 text-2xl">13. und 14. August in Besigheim</h3>
+					<h1 className="text-3xl font-medium">BesserTischtennis-Trainingscamp</h1>
+					<h3 className="mt-2 text-2xl">1. und 2. Juli in Pleidelsheim</h3>
 					<p className="py-6">Der optimale Trainingsstart für deine erfolgreiche Saison!</p>
 					<a
 						href={flyer}

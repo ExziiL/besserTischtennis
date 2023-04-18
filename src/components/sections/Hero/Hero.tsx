@@ -22,7 +22,7 @@ const Hero: FC<IHero> = ({ idName }) => {
 	return (
 		<div
 			ref={heroRef}
-			className="p-4 pt-10 xl:px-0 sm:mx-0 sm:pt-16 md:flex md:items-center scroll-mt-20"
+			className="p-4 pt-10 xl:px-0 sm:mx-0 sm:pt-24 md:flex md:items-center scroll-mt-20"
 			id={idName}
 		>
 			<div className="sm:pr-12 md:w-1/2">
