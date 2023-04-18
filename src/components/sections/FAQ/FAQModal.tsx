@@ -2,8 +2,9 @@ import React, { FC, useState } from 'react';
 
 import Svg from '../../atoms/Svg/Svg';
 
-import plus from '../../../css/icons/plus-solid.svg';
+import { FaMinus, FaPlus } from 'react-icons/fa';
 import minus from '../../../css/icons/minus-solid.svg';
+import plus from '../../../css/icons/plus-solid.svg';
 
 export interface IFAQModal {
 	question: string;
@@ -17,13 +18,16 @@ const FAQModal: FC<IFAQModal> = ({ question, answer }) => {
 
 	return (
 		<div className="px-4 py-3 my-2 bg-white rounded-sm md:py-5 md:px-7">
-			<div className="flex items-center justify-between cursor-pointer select-none" onClick={toggleOpen}>
+			<div
+				className="flex items-center justify-between cursor-pointer select-none"
+				onClick={toggleOpen}
+			>
 				<h1 className="flex items-center mb-0 font-semibold leading-6 md:text-lg">{question}</h1>
 				<div className=" sm:w-12 min-w-[40px] min-h-[40px] sm:h-12 bg-[#ff6433] flex justify-center items-center sm:min-w-[48px] sm:min-h-[48px] ml-2">
-					<Svg icon={isOpen ? minus : plus} width={1.25} className="" />
+					<div className="text-lg text-white">{isOpen ? <FaMinus /> : <FaPlus />}</div>
 				</div>
 			</div>
-			{isOpen ? <p className="pt-2 text-sm text-gray-500 md:text-base pr-14">{answer}</p> : null}
+			{isOpen ? <p className="pt-2 text-sm text-black md:text-base pr-14">{answer}</p> : null}
 		</div>
 	);
 };

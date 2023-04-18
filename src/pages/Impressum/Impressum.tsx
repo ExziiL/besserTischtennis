@@ -2,24 +2,70 @@ import React from 'react';
 
 const Impressum = () => {
 	return (
-		<div className="p-4 pb-24 prose">
-			<h1 className="">Impressum</h1>
-			<div>Angelo und Gioele Vulcano GbR</div>
-			<div>Hermannstr.13</div>
-			<div>74354 Besigheim</div>
-			<div>Deutschland</div>
-			<br />
-			<div>Tel.: +491773093837</div>
-			<div>E-Mail: info@bessertischtennis.de</div>
-			<br />
-			<div>Vertretungsberechtigte Gesellschafter: Angelo Vulcano, Gioele Vulcano</div>
-			<br />
-			<div>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE341327125</div>
-			<br />
-			<div>Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/odr</div>
-			<br />
-			<div>Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer</div>
-			<div>Verbraucherschlichtungsstelle weder verpflichtet noch bereit.</div>
+		<div className="p-4 pt-24 pb-24 prose">
+			<h1>Impressum</h1>
+
+			<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+			<p>
+				Gioele Vulcano
+				<br />
+				BesserTischtennis
+				<br />
+				Hermannstr. 13
+				<br />
+				74354 Besigheim
+			</p>
+
+			<h2>Kontakt</h2>
+			<p>
+				Telefon: 0152 59388544
+				<br />
+				E-Mail: info@bessertischtennis.de
+			</p>
+
+			<h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
+			<p>
+				Berufsbezeichnung:
+				<br />
+				Trainer
+			</p>
+			<p>
+				Zust&auml;ndige Kammer:
+				<br />
+			</p>
+			<p>
+				Verliehen in:
+				<br />
+			</p>
+			<p>Es gelten folgende berufsrechtliche Regelungen:</p>
+			<h2>Redaktionell verantwortlich</h2>
+			<p>
+				Gioele Vulcano
+				<br />
+				Hermannstr. 13
+				<br />
+				74354 Besigheim
+			</p>
+
+			<h2>EU-Streitschlichtung</h2>
+			<p>
+				Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
+				<a
+					href="https://ec.europa.eu/consumers/odr/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					https://ec.europa.eu/consumers/odr/
+				</a>
+				.<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.
+			</p>
+
+			<h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
+			<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+			<p>
+				Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
+			</p>
 		</div>
 	);
 };
